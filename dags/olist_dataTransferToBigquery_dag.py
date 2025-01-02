@@ -2,9 +2,10 @@ from airflow import DAG
 from airflow.providers.google.cloud.operators.gcs import GCSDeleteObjectsOperator
 from airflow.providers.google.cloud.transfers.postgres_to_gcs import PostgresToGCSOperator
 from airflow.providers.google.cloud.transfers.gcs_to_bigquery import GCSToBigQueryOperator
-from airflow.providers.http.sensors.http import HttpSensor
 from datetime import datetime
-
+import requests
+from airflow.operators.python import PythonOperator
+from google.cloud import storage
 
 # DAG configuration
 DEFAULT_ARGS = {
@@ -18,6 +19,7 @@ DEFAULT_ARGS = {
 BUCKET_NAME='ready-d25-postgres-to-gcs'
 PROJECT_ID='ready-de-25'
 DATASET_ID='olist_ziad'
+
 
 
 with DAG(
@@ -77,14 +79,21 @@ with DAG(
         "sellers": "https://us-central1-ready-de-25.cloudfunctions.net/sellers_table"
     }
 
+    def fetch_and_upload_to_gcs(endpoint, bucket_name, destination_blob_name):
+        response = requests.get(endpoint)
+        response.raise_for_status()
+        data = response.text
+        client = storage.Client()
+        bucket = client.get_bucket(bucket_name)
+        blob = bucket.blob(destination_blob_name)
+        blob.upload_from_string(data)
+
+
     for table_name, endpoint in api_endpoints.items():
-        check_api = HttpSensor(
-            task_id=f'check_{table_name}_api',
-            http_conn_id='http_z',
-            endpoint=endpoint,
-            response_check=lambda response: response.status_code == 200,
-            poke_interval=5,
-            timeout=20
+        fetch_api_data = PythonOperator(
+            task_id=f'fetch_{table_name}_data',
+            python_callable=fetch_and_upload_to_gcs,
+            op_args=[endpoint, BUCKET_NAME, f'ziad/olist/{table_name}.csv']
         )
 
         load_api_to_bq = GCSToBigQueryOperator(
@@ -96,7 +105,7 @@ with DAG(
             write_disposition='WRITE_TRUNCATE'
         )
 
-        check_api >> load_api_to_bq
+        fetch_api_data >> load_api_to_bq
 
     # Cleanup bucket after processing
     # cleanup_gcs_bucket.set_upstream([load_to_bq])
