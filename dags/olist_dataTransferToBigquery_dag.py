@@ -7,6 +7,7 @@ import requests
 from airflow.operators.python import PythonOperator
 from google.cloud import storage
 
+
 # DAG configuration
 DEFAULT_ARGS = {
     'owner': 'Ziad',
