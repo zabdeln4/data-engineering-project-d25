@@ -1,0 +1,1612 @@
+[0m17:04:54.510520 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x778be4653040>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x778be3656230>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x778be36561d0>]}
+
+
+============================== 17:04:54.513496 | 8787606e-624f-4660-8096-7419623de635 ==============================
+[0m17:04:54.513496 [info ] [MainThread]: Running with dbt=1.9.1
+[0m17:04:54.514365 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'version_check': 'True', 'log_path': '/home/zi/DE-Project_Ready/Development/dbt_modeling/logs', 'fail_fast': 'False', 'profiles_dir': '/home/zi/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'invocation_command': 'dbt debug', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m17:04:54.522937 [info ] [MainThread]: dbt version: 1.9.1
+[0m17:04:54.523642 [info ] [MainThread]: python version: 3.10.12
+[0m17:04:54.524392 [info ] [MainThread]: python path: /usr/bin/python3
+[0m17:04:54.525127 [info ] [MainThread]: os info: Linux-6.8.0-51-generic-x86_64-with-glibc2.35
+[0m17:04:55.376419 [info ] [MainThread]: Using profiles dir at /home/zi/.dbt
+[0m17:04:55.377119 [info ] [MainThread]: Using profiles.yml file at /home/zi/.dbt/profiles.yml
+[0m17:04:55.377908 [info ] [MainThread]: Using dbt_project.yml file at /home/zi/DE-Project_Ready/Development/dbt_modeling/dbt_project.yml
+[0m17:04:55.378483 [info ] [MainThread]: adapter type: bigquery
+[0m17:04:55.379055 [info ] [MainThread]: adapter version: 1.9.0
+[0m17:04:55.502039 [info ] [MainThread]: Configuration:
+[0m17:04:55.502678 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m17:04:55.503200 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m17:04:55.503832 [info ] [MainThread]: Required dependencies:
+[0m17:04:55.504384 [debug] [MainThread]: Executing "git --help"
+[0m17:04:55.506023 [info ] [MainThread]:  - git [[31mERROR[0m]
+
+[0m17:04:55.506530 [info ] [MainThread]: Connection:
+[0m17:04:55.507151 [info ] [MainThread]:   method: service-account
+[0m17:04:55.508050 [info ] [MainThread]:   database: ready-de-25
+[0m17:04:55.508864 [info ] [MainThread]:   execution_project: ready-de-25
+[0m17:04:55.509709 [info ] [MainThread]:   schema: olist_ziad
+[0m17:04:55.510706 [info ] [MainThread]:   location: US
+[0m17:04:55.511595 [info ] [MainThread]:   priority: interactive
+[0m17:04:55.512692 [info ] [MainThread]:   maximum_bytes_billed: None
+[0m17:04:55.513574 [info ] [MainThread]:   impersonate_service_account: None
+[0m17:04:55.514439 [info ] [MainThread]:   job_retry_deadline_seconds: None
+[0m17:04:55.515295 [info ] [MainThread]:   job_retries: 1
+[0m17:04:55.516115 [info ] [MainThread]:   job_creation_timeout_seconds: None
+[0m17:04:55.517030 [info ] [MainThread]:   job_execution_timeout_seconds: 300
+[0m17:04:55.517953 [info ] [MainThread]:   timeout_seconds: 300
+[0m17:04:55.518728 [info ] [MainThread]:   client_id: None
+[0m17:04:55.519578 [info ] [MainThread]:   token_uri: None
+[0m17:04:55.520718 [info ] [MainThread]:   dataproc_region: None
+[0m17:04:55.521836 [info ] [MainThread]:   dataproc_cluster_name: None
+[0m17:04:55.522993 [info ] [MainThread]:   gcs_bucket: None
+[0m17:04:55.523930 [info ] [MainThread]:   dataproc_batch: None
+[0m17:04:55.525250 [info ] [MainThread]: Registered adapter: bigquery=1.9.0
+[0m17:04:55.688862 [debug] [MainThread]: Acquiring new bigquery connection 'debug'
+[0m17:04:55.689393 [debug] [MainThread]: On debug: select 1 as id
+[0m17:04:55.689959 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m17:04:56.924691 [debug] [MainThread]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=ready-de-25&j=bq:US:8f3064c5-30ef-47d0-9e5e-197f0306f13d&page=queryresults
+[0m17:04:57.845423 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m17:04:57.846770 [info ] [MainThread]: [31m1 check failed:[0m
+[0m17:04:57.847333 [info ] [MainThread]: Error from git --help: Could not find command, ensure it is in the user's PATH: "git"
+
+[0m17:04:57.848666 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 3.3976567, "process_in_blocks": "0", "process_kernel_time": 0.620124, "process_mem_max_rss": "210236", "process_out_blocks": "16", "process_user_time": 2.78156}
+[0m17:04:57.849506 [debug] [MainThread]: Command `dbt debug` failed at 17:04:57.849366 after 3.40 seconds
+[0m17:04:57.850082 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m17:04:57.850715 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x778be4653040>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x778be3d30550>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x778be3650790>]}
+[0m17:04:57.851366 [debug] [MainThread]: Flushing usage events
+[0m17:04:59.175045 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m17:09:24.928098 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x75341a387010>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x75341935ee30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x75341935ee90>]}
+
+
+============================== 17:09:24.931097 | 14c56e13-1bb3-4d26-9112-9e9869921bfa ==============================
+[0m17:09:24.931097 [info ] [MainThread]: Running with dbt=1.9.1
+[0m17:09:24.932132 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/zi/.dbt', 'version_check': 'True', 'debug': 'False', 'log_path': '/home/zi/DE-Project_Ready/Development/dbt_modeling/logs', 'warn_error': 'None', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt debug', 'log_format': 'default', 'static_parser': 'True', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m17:09:24.940743 [info ] [MainThread]: dbt version: 1.9.1
+[0m17:09:24.941384 [info ] [MainThread]: python version: 3.10.12
+[0m17:09:24.942077 [info ] [MainThread]: python path: /usr/bin/python3
+[0m17:09:24.942686 [info ] [MainThread]: os info: Linux-6.8.0-51-generic-x86_64-with-glibc2.35
+[0m17:09:25.756136 [info ] [MainThread]: Using profiles dir at /home/zi/.dbt
+[0m17:09:25.756899 [info ] [MainThread]: Using profiles.yml file at /home/zi/.dbt/profiles.yml
+[0m17:09:25.757740 [info ] [MainThread]: Using dbt_project.yml file at /home/zi/DE-Project_Ready/Development/dbt_modeling/dbt_project.yml
+[0m17:09:25.758396 [info ] [MainThread]: adapter type: bigquery
+[0m17:09:25.759050 [info ] [MainThread]: adapter version: 1.9.0
+[0m17:09:25.878775 [info ] [MainThread]: Configuration:
+[0m17:09:25.879482 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m17:09:25.880192 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m17:09:25.880867 [info ] [MainThread]: Required dependencies:
+[0m17:09:25.881546 [debug] [MainThread]: Executing "git --help"
+[0m17:09:25.884284 [debug] [MainThread]: STDOUT: "b"usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m17:09:25.884921 [debug] [MainThread]: STDERR: "b''"
+[0m17:09:25.885647 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m17:09:25.886292 [info ] [MainThread]: Connection:
+[0m17:09:25.886991 [info ] [MainThread]:   method: service-account
+[0m17:09:25.887646 [info ] [MainThread]:   database: ready-de-25
+[0m17:09:25.888279 [info ] [MainThread]:   execution_project: ready-de-25
+[0m17:09:25.888903 [info ] [MainThread]:   schema: olist_ziad
+[0m17:09:25.889545 [info ] [MainThread]:   location: US
+[0m17:09:25.890174 [info ] [MainThread]:   priority: interactive
+[0m17:09:25.890828 [info ] [MainThread]:   maximum_bytes_billed: None
+[0m17:09:25.891409 [info ] [MainThread]:   impersonate_service_account: None
+[0m17:09:25.892140 [info ] [MainThread]:   job_retry_deadline_seconds: None
+[0m17:09:25.892891 [info ] [MainThread]:   job_retries: 1
+[0m17:09:25.893502 [info ] [MainThread]:   job_creation_timeout_seconds: None
+[0m17:09:25.894192 [info ] [MainThread]:   job_execution_timeout_seconds: 300
+[0m17:09:25.894854 [info ] [MainThread]:   timeout_seconds: 300
+[0m17:09:25.895462 [info ] [MainThread]:   client_id: None
+[0m17:09:25.896124 [info ] [MainThread]:   token_uri: None
+[0m17:09:25.896803 [info ] [MainThread]:   dataproc_region: None
+[0m17:09:25.897662 [info ] [MainThread]:   dataproc_cluster_name: None
+[0m17:09:25.898451 [info ] [MainThread]:   gcs_bucket: None
+[0m17:09:25.899237 [info ] [MainThread]:   dataproc_batch: None
+[0m17:09:25.900162 [info ] [MainThread]: Registered adapter: bigquery=1.9.0
+[0m17:09:26.060986 [debug] [MainThread]: Acquiring new bigquery connection 'debug'
+[0m17:09:26.061521 [debug] [MainThread]: On debug: select 1 as id
+[0m17:09:26.062036 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m17:09:27.543643 [debug] [MainThread]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=ready-de-25&j=bq:US:c60f1a67-23b4-40e1-9345-97b38ef9198d&page=queryresults
+[0m17:09:28.568349 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m17:09:28.569083 [info ] [MainThread]: [32mAll checks passed![0m
+[0m17:09:28.591528 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": true, "command_wall_clock_time": 3.7236247, "process_in_blocks": "0", "process_kernel_time": 0.648506, "process_mem_max_rss": "210632", "process_out_blocks": "24", "process_user_time": 2.713139}
+[0m17:09:28.593049 [debug] [MainThread]: Command `dbt debug` succeeded at 17:09:28.592781 after 3.73 seconds
+[0m17:09:28.598145 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m17:09:28.599256 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x75341a387010>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x75341935eef0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x75341a2ee8c0>]}
+[0m17:09:28.600621 [debug] [MainThread]: Flushing usage events
+[0m17:09:30.307091 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m18:44:58.591223 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7bbfea93f070>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7bbfea8d4910>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7bbfe9ab7760>]}
+
+
+============================== 18:44:58.594386 | eb4f4539-da60-4681-aa5c-00f145cd73a6 ==============================
+[0m18:44:58.594386 [info ] [MainThread]: Running with dbt=1.9.1
+[0m18:44:58.595280 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'fail_fast': 'False', 'log_path': '/home/zi/DE-Project_Ready/Development/dbt_modeling/logs', 'profiles_dir': '/home/zi/.dbt', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'invocation_command': 'dbt run', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m18:44:59.526435 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'eb4f4539-da60-4681-aa5c-00f145cd73a6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7bbfeb85a230>]}
+[0m18:44:59.590989 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'eb4f4539-da60-4681-aa5c-00f145cd73a6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7bbfc68da8f0>]}
+[0m18:44:59.591838 [info ] [MainThread]: Registered adapter: bigquery=1.9.0
+[0m18:44:59.752941 [debug] [MainThread]: checksum: 5e8d1596cf4eae33c11286bbb248a722d21b9f00d8a7ced8137c642517055418, vars: {}, profile: , target: , version: 1.9.1
+[0m18:44:59.753879 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m18:44:59.754472 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'eb4f4539-da60-4681-aa5c-00f145cd73a6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7bbfc67208b0>]}
+[0m18:45:00.891288 [error] [MainThread]: Encountered an error:
+Compilation Error
+  Model 'model.dbt_modeling.fact_reviews' (models/facts/fact_reviews.sql) depends on a source named 'olist_ziad.order_reviews' which was not found
+[0m18:45:00.892802 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 2.3630705, "process_in_blocks": "0", "process_kernel_time": 0.661841, "process_mem_max_rss": "210852", "process_out_blocks": "8", "process_user_time": 3.777096}
+[0m18:45:00.893563 [debug] [MainThread]: Command `dbt run` failed at 18:45:00.893439 after 2.36 seconds
+[0m18:45:00.894162 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7bbfea93f070>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7bbfc6117760>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7bbfc61155d0>]}
+[0m18:45:00.894759 [debug] [MainThread]: Flushing usage events
+[0m18:45:02.030558 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m18:58:28.903589 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7252f8cdb070>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7252f89a8910>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7252f7b03d00>]}
+
+
+============================== 18:58:28.906551 | 92491baa-7329-450d-9ce1-db0c68ad7341 ==============================
+[0m18:58:28.906551 [info ] [MainThread]: Running with dbt=1.9.1
+[0m18:58:28.907460 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'version_check': 'True', 'log_path': '/home/zi/DE-Project_Ready/Development/dbt_modeling/logs', 'fail_fast': 'False', 'profiles_dir': '/home/zi/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt clean', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m18:58:29.048445 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '92491baa-7329-450d-9ce1-db0c68ad7341', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7252f7b039d0>]}
+[0m18:58:29.059097 [debug] [MainThread]: Resource report: {"command_name": "clean", "command_success": true, "command_wall_clock_time": 0.21657954, "process_in_blocks": "0", "process_kernel_time": 0.095945, "process_mem_max_rss": "93580", "process_out_blocks": "8", "process_user_time": 1.480164}
+[0m18:58:29.059853 [debug] [MainThread]: Command `dbt clean` succeeded at 18:58:29.059745 after 0.22 seconds
+[0m18:58:29.060355 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7252f8cdb070>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7252f7b039d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7252f7b93e20>]}
+[0m18:58:29.060932 [debug] [MainThread]: Flushing usage events
+[0m18:58:30.193438 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m18:58:42.158853 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72a479bdb040>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72a478a8ae30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72a478a8ae90>]}
+
+
+============================== 18:58:42.161717 | 07a09e44-bc72-425b-b80b-a6824735fe43 ==============================
+[0m18:58:42.161717 [info ] [MainThread]: Running with dbt=1.9.1
+[0m18:58:42.162701 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'debug': 'False', 'log_path': '/home/zi/DE-Project_Ready/Development/dbt_modeling/logs', 'version_check': 'True', 'profiles_dir': '/home/zi/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'log_format': 'default', 'invocation_command': 'dbt deps', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m18:58:42.307082 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '07a09e44-bc72-425b-b80b-a6824735fe43', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72a478a89810>]}
+[0m18:58:42.317392 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m18:58:42.318452 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m18:58:42.319926 [debug] [MainThread]: Resource report: {"command_name": "deps", "command_success": true, "command_wall_clock_time": 0.22192667, "process_in_blocks": "0", "process_kernel_time": 0.087943, "process_mem_max_rss": "93496", "process_out_blocks": "8", "process_user_time": 1.49005}
+[0m18:58:42.320771 [debug] [MainThread]: Command `dbt deps` succeeded at 18:58:42.320562 after 0.22 seconds
+[0m18:58:42.321278 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72a479bdb040>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72a4789caa10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72a478a8a6e0>]}
+[0m18:58:42.321905 [debug] [MainThread]: Flushing usage events
+[0m18:58:43.598460 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m18:59:17.331785 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x75ed2eb46f80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x75ed2dd63910>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x75ed2dcbb970>]}
+
+
+============================== 18:59:17.334787 | a8192b32-e3d8-49d1-93be-d3a30ad50dfe ==============================
+[0m18:59:17.334787 [info ] [MainThread]: Running with dbt=1.9.1
+[0m18:59:17.335719 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/zi/.dbt', 'debug': 'False', 'fail_fast': 'False', 'log_path': '/home/zi/DE-Project_Ready/Development/dbt_modeling/logs', 'warn_error': 'None', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt run', 'log_format': 'default', 'introspect': 'True', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m18:59:18.285488 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'a8192b32-e3d8-49d1-93be-d3a30ad50dfe', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x75ed0a9a0820>]}
+[0m18:59:18.351900 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'a8192b32-e3d8-49d1-93be-d3a30ad50dfe', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x75ed0aa73df0>]}
+[0m18:59:18.352779 [info ] [MainThread]: Registered adapter: bigquery=1.9.0
+[0m18:59:18.519620 [debug] [MainThread]: checksum: 5e8d1596cf4eae33c11286bbb248a722d21b9f00d8a7ced8137c642517055418, vars: {}, profile: , target: , version: 1.9.1
+[0m18:59:18.520574 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m18:59:18.521237 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'a8192b32-e3d8-49d1-93be-d3a30ad50dfe', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x75ed0a8687f0>]}
+[0m18:59:19.775422 [error] [MainThread]: Encountered an error:
+Compilation Error
+  Model 'model.dbt_modeling.stg_payments' (models/staging/stg_payments.sql) depends on a source named 'olist_ziad.order_payments' which was not found
+[0m18:59:19.776976 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 2.5068893, "process_in_blocks": "0", "process_kernel_time": 0.63988, "process_mem_max_rss": "212612", "process_out_blocks": "16", "process_user_time": 3.929126}
+[0m18:59:19.777777 [debug] [MainThread]: Command `dbt run` failed at 18:59:19.777609 after 2.51 seconds
+[0m18:59:19.778330 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x75ed2eb46f80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x75ed0a310880>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x75ed0a3b4130>]}
+[0m18:59:19.778985 [debug] [MainThread]: Flushing usage events
+[0m18:59:23.217069 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m19:02:43.360527 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x76f0fce7ef80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x76f0fc073910>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x76f0fbfcb970>]}
+
+
+============================== 19:02:43.363574 | d1973ecf-931b-414f-969d-089cff712705 ==============================
+[0m19:02:43.363574 [info ] [MainThread]: Running with dbt=1.9.1
+[0m19:02:43.364467 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'version_check': 'True', 'log_path': '/home/zi/DE-Project_Ready/Development/dbt_modeling/logs', 'debug': 'False', 'profiles_dir': '/home/zi/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'invocation_command': 'dbt run', 'static_parser': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m19:02:44.305836 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'd1973ecf-931b-414f-969d-089cff712705', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x76f0dccd6890>]}
+[0m19:02:44.371320 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'd1973ecf-931b-414f-969d-089cff712705', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x76f0dce21810>]}
+[0m19:02:44.372194 [info ] [MainThread]: Registered adapter: bigquery=1.9.0
+[0m19:02:44.539190 [debug] [MainThread]: checksum: 5e8d1596cf4eae33c11286bbb248a722d21b9f00d8a7ced8137c642517055418, vars: {}, profile: , target: , version: 1.9.1
+[0m19:02:44.540185 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m19:02:44.540839 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'd1973ecf-931b-414f-969d-089cff712705', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x76f0dcbad2d0>]}
+[0m19:02:45.792866 [error] [MainThread]: Encountered an error:
+Compilation Error
+  Model 'model.dbt_modeling.dim_sellers' (models/dimensions/dim_sellers.sql) depends on a source named 'olist_ziad.sellers' which was not found
+[0m19:02:45.794265 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 2.4956524, "process_in_blocks": "0", "process_kernel_time": 0.666775, "process_mem_max_rss": "212556", "process_out_blocks": "16", "process_user_time": 3.909684}
+[0m19:02:45.795103 [debug] [MainThread]: Command `dbt run` failed at 19:02:45.794977 after 2.50 seconds
+[0m19:02:45.795650 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x76f0fce7ef80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x76f0dc874400>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x76f0dc876a40>]}
+[0m19:02:45.796254 [debug] [MainThread]: Flushing usage events
+[0m19:02:46.815705 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m19:04:30.761088 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x73c2c2483010>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x73c2c2218130>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x73c2c15ce800>]}
+
+
+============================== 19:04:30.764067 | 03bc3eb1-7a58-4a0d-b994-93e04a576d46 ==============================
+[0m19:04:30.764067 [info ] [MainThread]: Running with dbt=1.9.1
+[0m19:04:30.765157 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'version_check': 'True', 'log_path': '/home/zi/DE-Project_Ready/Development/dbt_modeling/logs', 'profiles_dir': '/home/zi/.dbt', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'static_parser': 'True', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'invocation_command': 'dbt run', 'send_anonymous_usage_stats': 'True'}
+[0m19:04:31.725371 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '03bc3eb1-7a58-4a0d-b994-93e04a576d46', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x73c2a218b640>]}
+[0m19:04:31.790241 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '03bc3eb1-7a58-4a0d-b994-93e04a576d46', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x73c2a2244790>]}
+[0m19:04:31.791103 [info ] [MainThread]: Registered adapter: bigquery=1.9.0
+[0m19:04:31.958902 [debug] [MainThread]: checksum: 5e8d1596cf4eae33c11286bbb248a722d21b9f00d8a7ced8137c642517055418, vars: {}, profile: , target: , version: 1.9.1
+[0m19:04:31.959947 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m19:04:31.960705 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '03bc3eb1-7a58-4a0d-b994-93e04a576d46', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x73c2a21a6c50>]}
+[0m19:04:33.313764 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '03bc3eb1-7a58-4a0d-b994-93e04a576d46', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x73c2a19c4100>]}
+[0m19:04:33.417096 [debug] [MainThread]: Wrote artifact WritableManifest to /home/zi/DE-Project_Ready/Development/dbt_modeling/target/manifest.json
+[0m19:04:33.419003 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/zi/DE-Project_Ready/Development/dbt_modeling/target/semantic_manifest.json
+[0m19:04:33.433725 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '03bc3eb1-7a58-4a0d-b994-93e04a576d46', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x73c2c3247400>]}
+[0m19:04:33.434407 [info ] [MainThread]: Found 14 models, 8 sources, 489 macros
+[0m19:04:33.435129 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '03bc3eb1-7a58-4a0d-b994-93e04a576d46', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x73c2c26305e0>]}
+[0m19:04:33.437469 [info ] [MainThread]: 
+[0m19:04:33.438266 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m19:04:33.439035 [info ] [MainThread]: 
+[0m19:04:33.440071 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m19:04:33.446640 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_ready-de-25'
+[0m19:04:33.447546 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m19:04:34.956118 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_ready-de-25, now list_ready-de-25_olist_ziad)
+[0m19:04:34.957050 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m19:04:36.908829 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '03bc3eb1-7a58-4a0d-b994-93e04a576d46', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x73c2c1417460>]}
+[0m19:04:36.909693 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m19:04:36.958089 [debug] [Thread-1 (]: Began running node model.dbt_modeling.dim_sellers
+[0m19:04:36.958923 [info ] [Thread-1 (]: 1 of 14 START sql table model olist_ziad.dim_sellers ........................... [RUN]
+[0m19:04:36.959937 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_ready-de-25_olist_ziad, now model.dbt_modeling.dim_sellers)
+[0m19:04:36.960614 [debug] [Thread-1 (]: Began compiling node model.dbt_modeling.dim_sellers
+[0m19:04:36.971111 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_modeling.dim_sellers"
+[0m19:04:36.972161 [debug] [Thread-1 (]: Began executing node model.dbt_modeling.dim_sellers
+[0m19:04:37.094811 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_modeling.dim_sellers"
+[0m19:04:37.095871 [debug] [Thread-1 (]: On model.dbt_modeling.dim_sellers: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "dbt_modeling", "target_name": "dev", "node_id": "model.dbt_modeling.dim_sellers"} */
+
+  
+    
+
+    create or replace table `ready-de-25`.`olist_ziad`.`dim_sellers`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      SELECT DISTINCT
+    seller_id,
+    seller_zip_code_prefix,
+    seller_city,
+    seller_state
+FROM `ready-de-25`.`olist_ziad`.`sellers`;
+    );
+  
+[0m19:04:37.096484 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m19:04:38.196704 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=ready-de-25&j=bq:US:c72ef0e1-eff1-4892-8fc4-ea1069d5fabf&page=queryresults
+[0m19:04:38.199022 [error] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=ready-de-25&j=bq:US:c72ef0e1-eff1-4892-8fc4-ea1069d5fabf&page=queryresults
+[0m19:04:38.204959 [debug] [Thread-1 (]: Database Error in model dim_sellers (models/dimensions/dim_sellers.sql)
+  Syntax error: Expected ")" but got ";" at [18:42]
+  compiled code at target/run/dbt_modeling/models/dimensions/dim_sellers.sql
+[0m19:04:38.207533 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '03bc3eb1-7a58-4a0d-b994-93e04a576d46', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x73c2c26055a0>]}
+[0m19:04:38.208660 [error] [Thread-1 (]: 1 of 14 ERROR creating sql table model olist_ziad.dim_sellers .................. [[31mERROR[0m in 1.25s]
+[0m19:04:38.209684 [debug] [Thread-1 (]: Finished running node model.dbt_modeling.dim_sellers
+[0m19:04:38.210400 [debug] [Thread-1 (]: Began running node model.dbt_modeling.fact_reviews
+[0m19:04:38.211215 [debug] [Thread-4 (]: Marking all children of 'model.dbt_modeling.dim_sellers' to be skipped because of status 'error'.  Reason: Database Error in model dim_sellers (models/dimensions/dim_sellers.sql)
+  Syntax error: Expected ")" but got ";" at [18:42]
+  compiled code at target/run/dbt_modeling/models/dimensions/dim_sellers.sql.
+[0m19:04:38.211983 [info ] [Thread-1 (]: 2 of 14 START sql table model olist_ziad.fact_reviews .......................... [RUN]
+[0m19:04:38.213558 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_modeling.dim_sellers, now model.dbt_modeling.fact_reviews)
+[0m19:04:38.214192 [debug] [Thread-1 (]: Began compiling node model.dbt_modeling.fact_reviews
+[0m19:04:38.218735 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_modeling.fact_reviews"
+[0m19:04:38.219657 [debug] [Thread-1 (]: Began executing node model.dbt_modeling.fact_reviews
+[0m19:04:38.223798 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_modeling.fact_reviews"
+[0m19:04:38.224933 [debug] [Thread-1 (]: On model.dbt_modeling.fact_reviews: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "dbt_modeling", "target_name": "dev", "node_id": "model.dbt_modeling.fact_reviews"} */
+
+  
+    
+
+    create or replace table `ready-de-25`.`olist_ziad`.`fact_reviews`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      SELECT
+    r.review_id,
+    r.order_id,
+    r.review_score,
+    r.review_comment_title,
+    r.review_comment_message,
+    r.review_creation_date
+FROM `ready-de-25`.`olist_ziad`.`order_reviews` r;
+    );
+  
+[0m19:04:38.225587 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m19:04:39.356809 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=ready-de-25&j=bq:US:7d31e7e6-ab19-4ad0-b26f-9e368b100ddc&page=queryresults
+[0m19:04:39.359429 [error] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=ready-de-25&j=bq:US:7d31e7e6-ab19-4ad0-b26f-9e368b100ddc&page=queryresults
+[0m19:04:39.361476 [debug] [Thread-1 (]: Database Error in model fact_reviews (models/facts/fact_reviews.sql)
+  Syntax error: Expected ")" but got ";" at [20:50]
+  compiled code at target/run/dbt_modeling/models/facts/fact_reviews.sql
+[0m19:04:39.362313 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '03bc3eb1-7a58-4a0d-b994-93e04a576d46', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x73c2a19c66b0>]}
+[0m19:04:39.363262 [error] [Thread-1 (]: 2 of 14 ERROR creating sql table model olist_ziad.fact_reviews ................. [[31mERROR[0m in 1.15s]
+[0m19:04:39.364280 [debug] [Thread-1 (]: Finished running node model.dbt_modeling.fact_reviews
+[0m19:04:39.364932 [debug] [Thread-1 (]: Began running node model.dbt_modeling.stg_customers
+[0m19:04:39.365940 [debug] [Thread-4 (]: Marking all children of 'model.dbt_modeling.fact_reviews' to be skipped because of status 'error'.  Reason: Database Error in model fact_reviews (models/facts/fact_reviews.sql)
+  Syntax error: Expected ")" but got ";" at [20:50]
+  compiled code at target/run/dbt_modeling/models/facts/fact_reviews.sql.
+[0m19:04:39.366860 [info ] [Thread-1 (]: 3 of 14 START sql view model olist_ziad.stg_customers .......................... [RUN]
+[0m19:04:39.367979 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_modeling.fact_reviews, now model.dbt_modeling.stg_customers)
+[0m19:04:39.368621 [debug] [Thread-1 (]: Began compiling node model.dbt_modeling.stg_customers
+[0m19:04:39.372915 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_modeling.stg_customers"
+[0m19:04:39.373881 [debug] [Thread-1 (]: Began executing node model.dbt_modeling.stg_customers
+[0m19:04:39.402461 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_modeling.stg_customers"
+[0m19:04:39.403348 [debug] [Thread-1 (]: On model.dbt_modeling.stg_customers: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "dbt_modeling", "target_name": "dev", "node_id": "model.dbt_modeling.stg_customers"} */
+
+
+  create or replace view `ready-de-25`.`olist_ziad`.`stg_customers`
+  OPTIONS()
+  as WITH cleaned_customers AS (
+    SELECT DISTINCT
+        customer_id,
+        customer_unique_id,
+        customer_zip_code_prefix,
+        customer_city,
+        customer_state
+    FROM `ready-de-25`.`olist_ziad`.`customers`
+)
+
+SELECT * FROM cleaned_customers;;
+
+
+[0m19:04:39.404072 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m19:04:40.691268 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=ready-de-25&j=bq:US:f23f76d2-fe0f-4d42-9e51-aa51a2f52a0b&page=queryresults
+[0m19:04:40.692876 [error] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=ready-de-25&j=bq:US:f23f76d2-fe0f-4d42-9e51-aa51a2f52a0b&page=queryresults
+[0m19:04:40.694879 [debug] [Thread-1 (]: Database Error in model stg_customers (models/staging/stg_customers.sql)
+  Syntax error: Unexpected ";" at [16:33]
+  compiled code at target/run/dbt_modeling/models/staging/stg_customers.sql
+[0m19:04:40.695675 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '03bc3eb1-7a58-4a0d-b994-93e04a576d46', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x73c2a1c45030>]}
+[0m19:04:40.696610 [error] [Thread-1 (]: 3 of 14 ERROR creating sql view model olist_ziad.stg_customers ................. [[31mERROR[0m in 1.33s]
+[0m19:04:40.697563 [debug] [Thread-1 (]: Finished running node model.dbt_modeling.stg_customers
+[0m19:04:40.698227 [debug] [Thread-1 (]: Began running node model.dbt_modeling.stg_order_items
+[0m19:04:40.699388 [debug] [Thread-4 (]: Marking all children of 'model.dbt_modeling.stg_customers' to be skipped because of status 'error'.  Reason: Database Error in model stg_customers (models/staging/stg_customers.sql)
+  Syntax error: Unexpected ";" at [16:33]
+  compiled code at target/run/dbt_modeling/models/staging/stg_customers.sql.
+[0m19:04:40.700251 [info ] [Thread-1 (]: 4 of 14 START sql view model olist_ziad.stg_order_items ........................ [RUN]
+[0m19:04:40.701521 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_modeling.stg_customers, now model.dbt_modeling.stg_order_items)
+[0m19:04:40.702221 [debug] [Thread-1 (]: Began compiling node model.dbt_modeling.stg_order_items
+[0m19:04:40.706774 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_modeling.stg_order_items"
+[0m19:04:40.707735 [debug] [Thread-1 (]: Began executing node model.dbt_modeling.stg_order_items
+[0m19:04:40.713438 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_modeling.stg_order_items"
+[0m19:04:40.714408 [debug] [Thread-1 (]: On model.dbt_modeling.stg_order_items: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "dbt_modeling", "target_name": "dev", "node_id": "model.dbt_modeling.stg_order_items"} */
+
+
+  create or replace view `ready-de-25`.`olist_ziad`.`stg_order_items`
+  OPTIONS()
+  as WITH cleaned_order_items AS (
+    SELECT DISTINCT
+        order_id,
+        order_item_id,
+        product_id,
+        seller_id,
+        shipping_limit_date,
+        price,
+        freight_value
+    FROM `ready-de-25`.`olist_ziad`.`order_items`
+)
+
+SELECT * FROM cleaned_order_items;;
+
+
+[0m19:04:40.715145 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m19:04:41.918501 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=ready-de-25&j=bq:US:c3f217bc-2a20-45dc-b243-f2403762f692&page=queryresults
+[0m19:04:41.921132 [error] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=ready-de-25&j=bq:US:c3f217bc-2a20-45dc-b243-f2403762f692&page=queryresults
+[0m19:04:41.927337 [debug] [Thread-1 (]: Database Error in model stg_order_items (models/staging/stg_order_items.sql)
+  Syntax error: Unexpected ";" at [18:35]
+  compiled code at target/run/dbt_modeling/models/staging/stg_order_items.sql
+[0m19:04:41.929919 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '03bc3eb1-7a58-4a0d-b994-93e04a576d46', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x73c2a1c47550>]}
+[0m19:04:41.932751 [error] [Thread-1 (]: 4 of 14 ERROR creating sql view model olist_ziad.stg_order_items ............... [[31mERROR[0m in 1.23s]
+[0m19:04:41.936077 [debug] [Thread-1 (]: Finished running node model.dbt_modeling.stg_order_items
+[0m19:04:41.938638 [debug] [Thread-1 (]: Began running node model.dbt_modeling.stg_orders
+[0m19:04:41.941495 [debug] [Thread-4 (]: Marking all children of 'model.dbt_modeling.stg_order_items' to be skipped because of status 'error'.  Reason: Database Error in model stg_order_items (models/staging/stg_order_items.sql)
+  Syntax error: Unexpected ";" at [18:35]
+  compiled code at target/run/dbt_modeling/models/staging/stg_order_items.sql.
+[0m19:04:41.943271 [info ] [Thread-1 (]: 5 of 14 START sql view model olist_ziad.stg_orders ............................. [RUN]
+[0m19:04:41.945535 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_modeling.stg_order_items, now model.dbt_modeling.stg_orders)
+[0m19:04:41.946959 [debug] [Thread-1 (]: Began compiling node model.dbt_modeling.stg_orders
+[0m19:04:41.955512 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_modeling.stg_orders"
+[0m19:04:41.957237 [debug] [Thread-1 (]: Began executing node model.dbt_modeling.stg_orders
+[0m19:04:41.967431 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_modeling.stg_orders"
+[0m19:04:41.968856 [debug] [Thread-1 (]: On model.dbt_modeling.stg_orders: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "dbt_modeling", "target_name": "dev", "node_id": "model.dbt_modeling.stg_orders"} */
+
+
+  create or replace view `ready-de-25`.`olist_ziad`.`stg_orders`
+  OPTIONS()
+  as WITH cleaned_orders AS (
+    SELECT DISTINCT
+        order_id,
+        customer_id,
+        order_status,
+        order_purchase_timestamp,
+        order_delivered_customer_date,
+        order_estimated_delivery_date
+    FROM `ready-de-25`.`olist_ziad`.`orders`
+)
+
+SELECT * FROM cleaned_orders;;
+
+
+[0m19:04:41.970688 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m19:04:43.658241 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=ready-de-25&j=bq:US:ece7b739-3768-4857-9487-e000eaf134e7&page=queryresults
+[0m19:04:43.660534 [error] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=ready-de-25&j=bq:US:ece7b739-3768-4857-9487-e000eaf134e7&page=queryresults
+[0m19:04:43.666233 [debug] [Thread-1 (]: Database Error in model stg_orders (models/staging/stg_orders.sql)
+  Syntax error: Unexpected ";" at [17:30]
+  compiled code at target/run/dbt_modeling/models/staging/stg_orders.sql
+[0m19:04:43.668623 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '03bc3eb1-7a58-4a0d-b994-93e04a576d46', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x73c2a1e6f7c0>]}
+[0m19:04:43.671505 [error] [Thread-1 (]: 5 of 14 ERROR creating sql view model olist_ziad.stg_orders .................... [[31mERROR[0m in 1.72s]
+[0m19:04:43.674346 [debug] [Thread-1 (]: Finished running node model.dbt_modeling.stg_orders
+[0m19:04:43.676352 [debug] [Thread-1 (]: Began running node model.dbt_modeling.stg_payments
+[0m19:04:43.678894 [debug] [Thread-4 (]: Marking all children of 'model.dbt_modeling.stg_orders' to be skipped because of status 'error'.  Reason: Database Error in model stg_orders (models/staging/stg_orders.sql)
+  Syntax error: Unexpected ";" at [17:30]
+  compiled code at target/run/dbt_modeling/models/staging/stg_orders.sql.
+[0m19:04:43.681370 [info ] [Thread-1 (]: 6 of 14 START sql view model olist_ziad.stg_payments ........................... [RUN]
+[0m19:04:43.684335 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_modeling.stg_orders, now model.dbt_modeling.stg_payments)
+[0m19:04:43.686321 [debug] [Thread-1 (]: Began compiling node model.dbt_modeling.stg_payments
+[0m19:04:43.696592 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_modeling.stg_payments"
+[0m19:04:43.698353 [debug] [Thread-1 (]: Began executing node model.dbt_modeling.stg_payments
+[0m19:04:43.704793 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_modeling.stg_payments"
+[0m19:04:43.706715 [debug] [Thread-1 (]: On model.dbt_modeling.stg_payments: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "dbt_modeling", "target_name": "dev", "node_id": "model.dbt_modeling.stg_payments"} */
+
+
+  create or replace view `ready-de-25`.`olist_ziad`.`stg_payments`
+  OPTIONS()
+  as SELECT DISTINCT
+    order_id,
+    payment_type,
+    payment_value
+FROM `ready-de-25`.`olist_ziad`.`order_payments`;;
+
+
+[0m19:04:43.707918 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m19:04:45.501079 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=ready-de-25&j=bq:US:47fe8fb1-cf56-48fb-88cb-3d28a91d12d9&page=queryresults
+[0m19:04:45.503505 [error] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=ready-de-25&j=bq:US:47fe8fb1-cf56-48fb-88cb-3d28a91d12d9&page=queryresults
+[0m19:04:45.509439 [debug] [Thread-1 (]: Database Error in model stg_payments (models/staging/stg_payments.sql)
+  Syntax error: Unexpected ";" at [10:50]
+  compiled code at target/run/dbt_modeling/models/staging/stg_payments.sql
+[0m19:04:45.512694 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '03bc3eb1-7a58-4a0d-b994-93e04a576d46', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x73c2a1f89840>]}
+[0m19:04:45.515661 [error] [Thread-1 (]: 6 of 14 ERROR creating sql view model olist_ziad.stg_payments .................. [[31mERROR[0m in 1.83s]
+[0m19:04:45.519044 [debug] [Thread-1 (]: Finished running node model.dbt_modeling.stg_payments
+[0m19:04:45.521091 [debug] [Thread-1 (]: Began running node model.dbt_modeling.stg_products
+[0m19:04:45.523780 [debug] [Thread-4 (]: Marking all children of 'model.dbt_modeling.stg_payments' to be skipped because of status 'error'.  Reason: Database Error in model stg_payments (models/staging/stg_payments.sql)
+  Syntax error: Unexpected ";" at [10:50]
+  compiled code at target/run/dbt_modeling/models/staging/stg_payments.sql.
+[0m19:04:45.526445 [info ] [Thread-1 (]: 7 of 14 START sql view model olist_ziad.stg_products ........................... [RUN]
+[0m19:04:45.529597 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_modeling.stg_payments, now model.dbt_modeling.stg_products)
+[0m19:04:45.531530 [debug] [Thread-1 (]: Began compiling node model.dbt_modeling.stg_products
+[0m19:04:45.540524 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_modeling.stg_products"
+[0m19:04:45.541972 [debug] [Thread-1 (]: Began executing node model.dbt_modeling.stg_products
+[0m19:04:45.548938 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_modeling.stg_products"
+[0m19:04:45.550322 [debug] [Thread-1 (]: On model.dbt_modeling.stg_products: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "dbt_modeling", "target_name": "dev", "node_id": "model.dbt_modeling.stg_products"} */
+
+
+  create or replace view `ready-de-25`.`olist_ziad`.`stg_products`
+  OPTIONS()
+  as WITH cleaned_products AS (
+    SELECT DISTINCT
+        product_id,
+        product_category_name,
+        product_name_lenght,
+        product_description_lenght,
+        product_photos_qty,
+        product_weight_g,
+        product_length_cm,
+        product_height_cm,
+        product_width_cm
+    FROM `ready-de-25`.`olist_ziad`.`products`
+)
+
+SELECT * FROM cleaned_products;;
+
+
+[0m19:04:45.551704 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m19:04:46.832392 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=ready-de-25&j=bq:US:7602563f-bcf3-4631-9dee-b48e1703a8ec&page=queryresults
+[0m19:04:46.834771 [error] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=ready-de-25&j=bq:US:7602563f-bcf3-4631-9dee-b48e1703a8ec&page=queryresults
+[0m19:04:46.836783 [debug] [Thread-1 (]: Database Error in model stg_products (models/staging/stg_products.sql)
+  Syntax error: Unexpected ";" at [20:32]
+  compiled code at target/run/dbt_modeling/models/staging/stg_products.sql
+[0m19:04:46.837611 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '03bc3eb1-7a58-4a0d-b994-93e04a576d46', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x73c2a1e59030>]}
+[0m19:04:46.838592 [error] [Thread-1 (]: 7 of 14 ERROR creating sql view model olist_ziad.stg_products .................. [[31mERROR[0m in 1.31s]
+[0m19:04:46.839550 [debug] [Thread-1 (]: Finished running node model.dbt_modeling.stg_products
+[0m19:04:46.840251 [debug] [Thread-1 (]: Began running node model.dbt_modeling.dim_customers
+[0m19:04:46.841176 [debug] [Thread-4 (]: Marking all children of 'model.dbt_modeling.stg_products' to be skipped because of status 'error'.  Reason: Database Error in model stg_products (models/staging/stg_products.sql)
+  Syntax error: Unexpected ";" at [20:32]
+  compiled code at target/run/dbt_modeling/models/staging/stg_products.sql.
+[0m19:04:46.841983 [info ] [Thread-1 (]: 8 of 14 SKIP relation olist_ziad.dim_customers ................................. [[33mSKIP[0m]
+[0m19:04:46.843292 [debug] [Thread-1 (]: Finished running node model.dbt_modeling.dim_customers
+[0m19:04:46.844014 [debug] [Thread-1 (]: Began running node model.dbt_modeling.fact_orders
+[0m19:04:46.844774 [info ] [Thread-1 (]: 9 of 14 SKIP relation olist_ziad.fact_orders ................................... [[33mSKIP[0m]
+[0m19:04:46.845486 [debug] [Thread-1 (]: Finished running node model.dbt_modeling.fact_orders
+[0m19:04:46.846232 [debug] [Thread-1 (]: Began running node model.dbt_modeling.dim_products
+[0m19:04:46.847171 [info ] [Thread-1 (]: 10 of 14 SKIP relation olist_ziad.dim_products ................................. [[33mSKIP[0m]
+[0m19:04:46.848011 [debug] [Thread-1 (]: Finished running node model.dbt_modeling.dim_products
+[0m19:04:46.848738 [debug] [Thread-1 (]: Began running node model.dbt_modeling.vw_monthly_orders_trend
+[0m19:04:46.849492 [info ] [Thread-1 (]: 11 of 14 SKIP relation olist_ziad.vw_monthly_orders_trend ...................... [[33mSKIP[0m]
+[0m19:04:46.850270 [debug] [Thread-1 (]: Finished running node model.dbt_modeling.vw_monthly_orders_trend
+[0m19:04:46.850938 [debug] [Thread-1 (]: Began running node model.dbt_modeling.vw_payment_methods_distribution
+[0m19:04:46.851713 [info ] [Thread-1 (]: 12 of 14 SKIP relation olist_ziad.vw_payment_methods_distribution .............. [[33mSKIP[0m]
+[0m19:04:46.852962 [debug] [Thread-1 (]: Finished running node model.dbt_modeling.vw_payment_methods_distribution
+[0m19:04:46.854180 [debug] [Thread-1 (]: Began running node model.dbt_modeling.vw_top_customers_by_order_value
+[0m19:04:46.855019 [info ] [Thread-1 (]: 13 of 14 SKIP relation olist_ziad.vw_top_customers_by_order_value .............. [[33mSKIP[0m]
+[0m19:04:46.855776 [debug] [Thread-1 (]: Finished running node model.dbt_modeling.vw_top_customers_by_order_value
+[0m19:04:46.856621 [debug] [Thread-1 (]: Began running node model.dbt_modeling.vw_top_selling_products
+[0m19:04:46.858125 [info ] [Thread-1 (]: 14 of 14 SKIP relation olist_ziad.vw_top_selling_products ...................... [[33mSKIP[0m]
+[0m19:04:46.858942 [debug] [Thread-1 (]: Finished running node model.dbt_modeling.vw_top_selling_products
+[0m19:04:46.860624 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m19:04:46.907186 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m19:04:46.907798 [debug] [MainThread]: Connection 'model.dbt_modeling.stg_products' was properly closed.
+[0m19:04:46.908360 [info ] [MainThread]: 
+[0m19:04:46.909083 [info ] [MainThread]: Finished running 5 table models, 9 view models in 0 hours 0 minutes and 13.47 seconds (13.47s).
+[0m19:04:46.911820 [debug] [MainThread]: Command end result
+[0m19:04:46.946906 [debug] [MainThread]: Wrote artifact WritableManifest to /home/zi/DE-Project_Ready/Development/dbt_modeling/target/manifest.json
+[0m19:04:46.948880 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/zi/DE-Project_Ready/Development/dbt_modeling/target/semantic_manifest.json
+[0m19:04:46.956226 [debug] [MainThread]: Wrote artifact RunExecutionResult to /home/zi/DE-Project_Ready/Development/dbt_modeling/target/run_results.json
+[0m19:04:46.956753 [info ] [MainThread]: 
+[0m19:04:46.957386 [info ] [MainThread]: [31mCompleted with 7 errors, 0 partial successes, and 0 warnings:[0m
+[0m19:04:46.958109 [info ] [MainThread]: 
+[0m19:04:46.958926 [error] [MainThread]:   Database Error in model dim_sellers (models/dimensions/dim_sellers.sql)
+  Syntax error: Expected ")" but got ";" at [18:42]
+  compiled code at target/run/dbt_modeling/models/dimensions/dim_sellers.sql
+[0m19:04:46.959589 [info ] [MainThread]: 
+[0m19:04:46.960311 [error] [MainThread]:   Database Error in model fact_reviews (models/facts/fact_reviews.sql)
+  Syntax error: Expected ")" but got ";" at [20:50]
+  compiled code at target/run/dbt_modeling/models/facts/fact_reviews.sql
+[0m19:04:46.960939 [info ] [MainThread]: 
+[0m19:04:46.961579 [error] [MainThread]:   Database Error in model stg_customers (models/staging/stg_customers.sql)
+  Syntax error: Unexpected ";" at [16:33]
+  compiled code at target/run/dbt_modeling/models/staging/stg_customers.sql
+[0m19:04:46.962313 [info ] [MainThread]: 
+[0m19:04:46.963314 [error] [MainThread]:   Database Error in model stg_order_items (models/staging/stg_order_items.sql)
+  Syntax error: Unexpected ";" at [18:35]
+  compiled code at target/run/dbt_modeling/models/staging/stg_order_items.sql
+[0m19:04:46.964040 [info ] [MainThread]: 
+[0m19:04:46.964901 [error] [MainThread]:   Database Error in model stg_orders (models/staging/stg_orders.sql)
+  Syntax error: Unexpected ";" at [17:30]
+  compiled code at target/run/dbt_modeling/models/staging/stg_orders.sql
+[0m19:04:46.965546 [info ] [MainThread]: 
+[0m19:04:46.966408 [error] [MainThread]:   Database Error in model stg_payments (models/staging/stg_payments.sql)
+  Syntax error: Unexpected ";" at [10:50]
+  compiled code at target/run/dbt_modeling/models/staging/stg_payments.sql
+[0m19:04:46.967141 [info ] [MainThread]: 
+[0m19:04:46.967831 [error] [MainThread]:   Database Error in model stg_products (models/staging/stg_products.sql)
+  Syntax error: Unexpected ";" at [20:32]
+  compiled code at target/run/dbt_modeling/models/staging/stg_products.sql
+[0m19:04:46.968354 [info ] [MainThread]: 
+[0m19:04:46.969139 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=7 SKIP=7 TOTAL=14
+[0m19:04:46.970500 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 16.270851, "process_in_blocks": "352", "process_kernel_time": 0.713101, "process_mem_max_rss": "218704", "process_out_blocks": "3368", "process_user_time": 5.364283}
+[0m19:04:46.971370 [debug] [MainThread]: Command `dbt run` failed at 19:04:46.971237 after 16.27 seconds
+[0m19:04:46.971999 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x73c2c2483010>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x73c2a1e3fe20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x73c2a1e3d060>]}
+[0m19:04:46.972608 [debug] [MainThread]: Flushing usage events
+[0m19:04:48.579760 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m19:07:52.203190 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x794492fdf070>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x794492ca8910>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x794491e03760>]}
+
+
+============================== 19:07:52.206249 | da97758d-fc77-41b4-960b-34fa2db9f20a ==============================
+[0m19:07:52.206249 [info ] [MainThread]: Running with dbt=1.9.1
+[0m19:07:52.207131 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'fail_fast': 'False', 'log_path': '/home/zi/DE-Project_Ready/Development/dbt_modeling/logs', 'version_check': 'True', 'profiles_dir': '/home/zi/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'invocation_command': 'dbt run', 'introspect': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m19:07:53.152301 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'da97758d-fc77-41b4-960b-34fa2db9f20a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x79446ed60850>]}
+[0m19:07:53.217379 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'da97758d-fc77-41b4-960b-34fa2db9f20a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x794492634a60>]}
+[0m19:07:53.218214 [info ] [MainThread]: Registered adapter: bigquery=1.9.0
+[0m19:07:53.383435 [debug] [MainThread]: checksum: 5e8d1596cf4eae33c11286bbb248a722d21b9f00d8a7ced8137c642517055418, vars: {}, profile: , target: , version: 1.9.1
+[0m19:07:53.516924 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 14 files changed.
+[0m19:07:53.517751 [debug] [MainThread]: Partial parsing: updated file: dbt_modeling://models/views/vw_payment_methods_distribution.sql
+[0m19:07:53.518336 [debug] [MainThread]: Partial parsing: updated file: dbt_modeling://models/dimensions/dim_customers.sql
+[0m19:07:53.518937 [debug] [MainThread]: Partial parsing: updated file: dbt_modeling://models/facts/fact_reviews.sql
+[0m19:07:53.519485 [debug] [MainThread]: Partial parsing: updated file: dbt_modeling://models/dimensions/dim_sellers.sql
+[0m19:07:53.520097 [debug] [MainThread]: Partial parsing: updated file: dbt_modeling://models/facts/fact_orders.sql
+[0m19:07:53.520647 [debug] [MainThread]: Partial parsing: updated file: dbt_modeling://models/staging/stg_customers.sql
+[0m19:07:53.521204 [debug] [MainThread]: Partial parsing: updated file: dbt_modeling://models/staging/stg_products.sql
+[0m19:07:53.521758 [debug] [MainThread]: Partial parsing: updated file: dbt_modeling://models/views/vw_top_customers_by_order_value.sql
+[0m19:07:53.522316 [debug] [MainThread]: Partial parsing: updated file: dbt_modeling://models/dimensions/dim_products.sql
+[0m19:07:53.522925 [debug] [MainThread]: Partial parsing: updated file: dbt_modeling://models/staging/stg_orders.sql
+[0m19:07:53.523472 [debug] [MainThread]: Partial parsing: updated file: dbt_modeling://models/views/vw_monthly_orders_trend.sql
+[0m19:07:53.524061 [debug] [MainThread]: Partial parsing: updated file: dbt_modeling://models/staging/stg_order_items.sql
+[0m19:07:53.524636 [debug] [MainThread]: Partial parsing: updated file: dbt_modeling://models/staging/stg_payments.sql
+[0m19:07:53.525195 [debug] [MainThread]: Partial parsing: updated file: dbt_modeling://models/views/vw_top_selling_products.sql
+[0m19:07:53.862052 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'da97758d-fc77-41b4-960b-34fa2db9f20a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x79446e764460>]}
+[0m19:07:53.954000 [debug] [MainThread]: Wrote artifact WritableManifest to /home/zi/DE-Project_Ready/Development/dbt_modeling/target/manifest.json
+[0m19:07:53.955721 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/zi/DE-Project_Ready/Development/dbt_modeling/target/semantic_manifest.json
+[0m19:07:53.968260 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'da97758d-fc77-41b4-960b-34fa2db9f20a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x79446e7860e0>]}
+[0m19:07:53.969017 [info ] [MainThread]: Found 14 models, 8 sources, 489 macros
+[0m19:07:53.969570 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'da97758d-fc77-41b4-960b-34fa2db9f20a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x79446e786a40>]}
+[0m19:07:53.971961 [info ] [MainThread]: 
+[0m19:07:53.972567 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m19:07:53.973193 [info ] [MainThread]: 
+[0m19:07:53.974217 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m19:07:53.984642 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_ready-de-25'
+[0m19:07:53.985610 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m19:07:55.055338 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_ready-de-25, now list_ready-de-25_olist_ziad)
+[0m19:07:55.057521 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m19:07:56.080549 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'da97758d-fc77-41b4-960b-34fa2db9f20a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x79446ece4fa0>]}
+[0m19:07:56.081328 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m19:07:56.129810 [debug] [Thread-1 (]: Began running node model.dbt_modeling.dim_sellers
+[0m19:07:56.130504 [info ] [Thread-1 (]: 1 of 14 START sql table model olist_ziad.dim_sellers ........................... [RUN]
+[0m19:07:56.131357 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_ready-de-25_olist_ziad, now model.dbt_modeling.dim_sellers)
+[0m19:07:56.131959 [debug] [Thread-1 (]: Began compiling node model.dbt_modeling.dim_sellers
+[0m19:07:56.142064 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_modeling.dim_sellers"
+[0m19:07:56.142928 [debug] [Thread-1 (]: Began executing node model.dbt_modeling.dim_sellers
+[0m19:07:56.189515 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_modeling.dim_sellers"
+[0m19:07:56.190412 [debug] [Thread-1 (]: On model.dbt_modeling.dim_sellers: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "dbt_modeling", "target_name": "dev", "node_id": "model.dbt_modeling.dim_sellers"} */
+
+  
+    
+
+    create or replace table `ready-de-25`.`olist_ziad`.`dim_sellers`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      SELECT DISTINCT
+    seller_id,
+    seller_zip_code_prefix,
+    seller_city,
+    seller_state
+FROM `ready-de-25`.`olist_ziad`.`sellers`
+    );
+  
+[0m19:07:56.191013 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m19:07:58.223901 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=ready-de-25&j=bq:US:20001358-717c-493a-8d52-86cbcc75f63c&page=queryresults
+[0m19:08:01.110778 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'da97758d-fc77-41b4-960b-34fa2db9f20a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x79446ee6e1d0>]}
+[0m19:08:01.111882 [info ] [Thread-1 (]: 1 of 14 OK created sql table model olist_ziad.dim_sellers ...................... [[32mCREATE TABLE (3.1k rows, 175.8 KiB processed)[0m in 4.98s]
+[0m19:08:01.112966 [debug] [Thread-1 (]: Finished running node model.dbt_modeling.dim_sellers
+[0m19:08:01.113597 [debug] [Thread-1 (]: Began running node model.dbt_modeling.fact_reviews
+[0m19:08:01.114408 [info ] [Thread-1 (]: 2 of 14 START sql table model olist_ziad.fact_reviews .......................... [RUN]
+[0m19:08:01.115176 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_modeling.dim_sellers, now model.dbt_modeling.fact_reviews)
+[0m19:08:01.115763 [debug] [Thread-1 (]: Began compiling node model.dbt_modeling.fact_reviews
+[0m19:08:01.119612 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_modeling.fact_reviews"
+[0m19:08:01.120523 [debug] [Thread-1 (]: Began executing node model.dbt_modeling.fact_reviews
+[0m19:08:01.124205 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_modeling.fact_reviews"
+[0m19:08:01.125458 [debug] [Thread-1 (]: On model.dbt_modeling.fact_reviews: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "dbt_modeling", "target_name": "dev", "node_id": "model.dbt_modeling.fact_reviews"} */
+
+  
+    
+
+    create or replace table `ready-de-25`.`olist_ziad`.`fact_reviews`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      SELECT
+    r.review_id,
+    r.order_id,
+    r.review_score,
+    r.review_comment_title,
+    r.review_comment_message,
+    r.review_creation_date
+FROM `ready-de-25`.`olist_ziad`.`order_reviews` r
+    );
+  
+[0m19:08:01.126259 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m19:08:02.831309 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=ready-de-25&j=bq:US:714a4d8e-0c06-439f-b77d-f6b7ba2aeacd&page=queryresults
+[0m19:08:03.344252 [error] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=ready-de-25&j=bq:US:714a4d8e-0c06-439f-b77d-f6b7ba2aeacd&page=queryresults
+[0m19:08:03.348987 [debug] [Thread-1 (]: Database Error in model fact_reviews (models/facts/fact_reviews.sql)
+  Name review_comment_title not found inside r at [17:7]
+  compiled code at target/run/dbt_modeling/models/facts/fact_reviews.sql
+[0m19:08:03.349854 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'da97758d-fc77-41b4-960b-34fa2db9f20a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x79446d38eb90>]}
+[0m19:08:03.350811 [error] [Thread-1 (]: 2 of 14 ERROR creating sql table model olist_ziad.fact_reviews ................. [[31mERROR[0m in 2.23s]
+[0m19:08:03.351820 [debug] [Thread-1 (]: Finished running node model.dbt_modeling.fact_reviews
+[0m19:08:03.352617 [debug] [Thread-1 (]: Began running node model.dbt_modeling.stg_customers
+[0m19:08:03.353594 [debug] [Thread-4 (]: Marking all children of 'model.dbt_modeling.fact_reviews' to be skipped because of status 'error'.  Reason: Database Error in model fact_reviews (models/facts/fact_reviews.sql)
+  Name review_comment_title not found inside r at [17:7]
+  compiled code at target/run/dbt_modeling/models/facts/fact_reviews.sql.
+[0m19:08:03.354505 [info ] [Thread-1 (]: 3 of 14 START sql view model olist_ziad.stg_customers .......................... [RUN]
+[0m19:08:03.356359 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_modeling.fact_reviews, now model.dbt_modeling.stg_customers)
+[0m19:08:03.357080 [debug] [Thread-1 (]: Began compiling node model.dbt_modeling.stg_customers
+[0m19:08:03.362191 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_modeling.stg_customers"
+[0m19:08:03.363153 [debug] [Thread-1 (]: Began executing node model.dbt_modeling.stg_customers
+[0m19:08:03.390488 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_modeling.stg_customers"
+[0m19:08:03.391419 [debug] [Thread-1 (]: On model.dbt_modeling.stg_customers: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "dbt_modeling", "target_name": "dev", "node_id": "model.dbt_modeling.stg_customers"} */
+
+
+  create or replace view `ready-de-25`.`olist_ziad`.`stg_customers`
+  OPTIONS()
+  as WITH cleaned_customers AS (
+    SELECT DISTINCT
+        customer_id,
+        customer_unique_id,
+        customer_zip_code_prefix,
+        customer_city,
+        customer_state
+    FROM `ready-de-25`.`olist_ziad`.`customers`
+)
+
+SELECT * FROM cleaned_customers;
+
+
+[0m19:08:03.392249 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m19:08:04.621230 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=ready-de-25&j=bq:US:d40b32a9-d69e-46eb-b260-34844d3834d3&page=queryresults
+[0m19:08:05.606819 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'da97758d-fc77-41b4-960b-34fa2db9f20a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x79446cb6b700>]}
+[0m19:08:05.607883 [info ] [Thread-1 (]: 3 of 14 OK created sql view model olist_ziad.stg_customers ..................... [[32mCREATE VIEW (0 processed)[0m in 2.25s]
+[0m19:08:05.608823 [debug] [Thread-1 (]: Finished running node model.dbt_modeling.stg_customers
+[0m19:08:05.609483 [debug] [Thread-1 (]: Began running node model.dbt_modeling.stg_order_items
+[0m19:08:05.610504 [info ] [Thread-1 (]: 4 of 14 START sql view model olist_ziad.stg_order_items ........................ [RUN]
+[0m19:08:05.611296 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_modeling.stg_customers, now model.dbt_modeling.stg_order_items)
+[0m19:08:05.611974 [debug] [Thread-1 (]: Began compiling node model.dbt_modeling.stg_order_items
+[0m19:08:05.616375 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_modeling.stg_order_items"
+[0m19:08:05.617375 [debug] [Thread-1 (]: Began executing node model.dbt_modeling.stg_order_items
+[0m19:08:05.621859 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_modeling.stg_order_items"
+[0m19:08:05.623082 [debug] [Thread-1 (]: On model.dbt_modeling.stg_order_items: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "dbt_modeling", "target_name": "dev", "node_id": "model.dbt_modeling.stg_order_items"} */
+
+
+  create or replace view `ready-de-25`.`olist_ziad`.`stg_order_items`
+  OPTIONS()
+  as WITH cleaned_order_items AS (
+    SELECT DISTINCT
+        order_id,
+        order_item_id,
+        product_id,
+        seller_id,
+        shipping_limit_date,
+        price,
+        freight_value
+    FROM `ready-de-25`.`olist_ziad`.`order_items`
+)
+
+SELECT * FROM cleaned_order_items;
+
+
+[0m19:08:05.624192 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m19:08:06.781524 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=ready-de-25&j=bq:US:e6c8b3fb-977d-4ce3-95a5-46490a92f37c&page=queryresults
+[0m19:08:07.448085 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'da97758d-fc77-41b4-960b-34fa2db9f20a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x79446cb6b700>]}
+[0m19:08:07.451228 [info ] [Thread-1 (]: 4 of 14 OK created sql view model olist_ziad.stg_order_items ................... [[32mCREATE VIEW (0 processed)[0m in 1.84s]
+[0m19:08:07.454378 [debug] [Thread-1 (]: Finished running node model.dbt_modeling.stg_order_items
+[0m19:08:07.456585 [debug] [Thread-1 (]: Began running node model.dbt_modeling.stg_orders
+[0m19:08:07.459412 [info ] [Thread-1 (]: 5 of 14 START sql view model olist_ziad.stg_orders ............................. [RUN]
+[0m19:08:07.461779 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_modeling.stg_order_items, now model.dbt_modeling.stg_orders)
+[0m19:08:07.463387 [debug] [Thread-1 (]: Began compiling node model.dbt_modeling.stg_orders
+[0m19:08:07.467540 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_modeling.stg_orders"
+[0m19:08:07.468425 [debug] [Thread-1 (]: Began executing node model.dbt_modeling.stg_orders
+[0m19:08:07.473824 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_modeling.stg_orders"
+[0m19:08:07.474873 [debug] [Thread-1 (]: On model.dbt_modeling.stg_orders: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "dbt_modeling", "target_name": "dev", "node_id": "model.dbt_modeling.stg_orders"} */
+
+
+  create or replace view `ready-de-25`.`olist_ziad`.`stg_orders`
+  OPTIONS()
+  as WITH cleaned_orders AS (
+    SELECT DISTINCT
+        order_id,
+        customer_id,
+        order_status,
+        order_purchase_timestamp,
+        order_delivered_customer_date,
+        order_estimated_delivery_date
+    FROM `ready-de-25`.`olist_ziad`.`orders`
+)
+
+SELECT * FROM cleaned_orders;
+
+
+[0m19:08:07.475583 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m19:08:08.796311 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=ready-de-25&j=bq:US:35a3f283-f7d1-4160-86c2-136585d00fb3&page=queryresults
+[0m19:08:09.414336 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'da97758d-fc77-41b4-960b-34fa2db9f20a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x79446cb59c00>]}
+[0m19:08:09.415403 [info ] [Thread-1 (]: 5 of 14 OK created sql view model olist_ziad.stg_orders ........................ [[32mCREATE VIEW (0 processed)[0m in 1.95s]
+[0m19:08:09.416325 [debug] [Thread-1 (]: Finished running node model.dbt_modeling.stg_orders
+[0m19:08:09.416981 [debug] [Thread-1 (]: Began running node model.dbt_modeling.stg_payments
+[0m19:08:09.417833 [info ] [Thread-1 (]: 6 of 14 START sql view model olist_ziad.stg_payments ........................... [RUN]
+[0m19:08:09.418557 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_modeling.stg_orders, now model.dbt_modeling.stg_payments)
+[0m19:08:09.419179 [debug] [Thread-1 (]: Began compiling node model.dbt_modeling.stg_payments
+[0m19:08:09.423252 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_modeling.stg_payments"
+[0m19:08:09.424271 [debug] [Thread-1 (]: Began executing node model.dbt_modeling.stg_payments
+[0m19:08:09.428738 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_modeling.stg_payments"
+[0m19:08:09.429891 [debug] [Thread-1 (]: On model.dbt_modeling.stg_payments: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "dbt_modeling", "target_name": "dev", "node_id": "model.dbt_modeling.stg_payments"} */
+
+
+  create or replace view `ready-de-25`.`olist_ziad`.`stg_payments`
+  OPTIONS()
+  as SELECT DISTINCT
+    order_id,
+    payment_type,
+    payment_value
+FROM `ready-de-25`.`olist_ziad`.`order_payments`;
+
+
+[0m19:08:09.430715 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m19:08:10.614511 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=ready-de-25&j=bq:US:44e6276c-bd1b-4327-9c6e-440a612924d8&page=queryresults
+[0m19:08:11.334356 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'da97758d-fc77-41b4-960b-34fa2db9f20a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x79446cbdfb80>]}
+[0m19:08:11.335435 [info ] [Thread-1 (]: 6 of 14 OK created sql view model olist_ziad.stg_payments ...................... [[32mCREATE VIEW (0 processed)[0m in 1.92s]
+[0m19:08:11.336380 [debug] [Thread-1 (]: Finished running node model.dbt_modeling.stg_payments
+[0m19:08:11.337055 [debug] [Thread-1 (]: Began running node model.dbt_modeling.stg_products
+[0m19:08:11.337770 [info ] [Thread-1 (]: 7 of 14 START sql view model olist_ziad.stg_products ........................... [RUN]
+[0m19:08:11.338770 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_modeling.stg_payments, now model.dbt_modeling.stg_products)
+[0m19:08:11.339397 [debug] [Thread-1 (]: Began compiling node model.dbt_modeling.stg_products
+[0m19:08:11.343874 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_modeling.stg_products"
+[0m19:08:11.344885 [debug] [Thread-1 (]: Began executing node model.dbt_modeling.stg_products
+[0m19:08:11.349086 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_modeling.stg_products"
+[0m19:08:11.350339 [debug] [Thread-1 (]: On model.dbt_modeling.stg_products: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "dbt_modeling", "target_name": "dev", "node_id": "model.dbt_modeling.stg_products"} */
+
+
+  create or replace view `ready-de-25`.`olist_ziad`.`stg_products`
+  OPTIONS()
+  as WITH cleaned_products AS (
+    SELECT DISTINCT
+        product_id,
+        product_category_name,
+        product_name_lenght,
+        product_description_lenght,
+        product_photos_qty,
+        product_weight_g,
+        product_length_cm,
+        product_height_cm,
+        product_width_cm
+    FROM `ready-de-25`.`olist_ziad`.`products`
+)
+
+SELECT * FROM cleaned_products;
+
+
+[0m19:08:11.351108 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m19:08:12.765001 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=ready-de-25&j=bq:US:f793dea2-287a-4880-b46c-1ab1735bb578&page=queryresults
+[0m19:08:13.509657 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'da97758d-fc77-41b4-960b-34fa2db9f20a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x79446e74f550>]}
+[0m19:08:13.513040 [info ] [Thread-1 (]: 7 of 14 OK created sql view model olist_ziad.stg_products ...................... [[32mCREATE VIEW (0 processed)[0m in 2.17s]
+[0m19:08:13.516386 [debug] [Thread-1 (]: Finished running node model.dbt_modeling.stg_products
+[0m19:08:13.518942 [debug] [Thread-1 (]: Began running node model.dbt_modeling.dim_customers
+[0m19:08:13.522729 [info ] [Thread-1 (]: 8 of 14 START sql table model olist_ziad.dim_customers ......................... [RUN]
+[0m19:08:13.525309 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_modeling.stg_products, now model.dbt_modeling.dim_customers)
+[0m19:08:13.526085 [debug] [Thread-1 (]: Began compiling node model.dbt_modeling.dim_customers
+[0m19:08:13.530144 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_modeling.dim_customers"
+[0m19:08:13.531115 [debug] [Thread-1 (]: Began executing node model.dbt_modeling.dim_customers
+[0m19:08:13.536026 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_modeling.dim_customers"
+[0m19:08:13.537029 [debug] [Thread-1 (]: On model.dbt_modeling.dim_customers: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "dbt_modeling", "target_name": "dev", "node_id": "model.dbt_modeling.dim_customers"} */
+
+  
+    
+
+    create or replace table `ready-de-25`.`olist_ziad`.`dim_customers`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      SELECT DISTINCT
+    customer_id,
+    customer_unique_id,
+    customer_zip_code_prefix,
+    customer_city,
+    customer_state
+FROM `ready-de-25`.`olist_ziad`.`stg_customers`
+    );
+  
+[0m19:08:13.537748 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m19:08:15.222635 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=ready-de-25&j=bq:US:7f8cee2b-6a09-4179-aec5-3914d0132d5e&page=queryresults
+[0m19:08:19.170664 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'da97758d-fc77-41b4-960b-34fa2db9f20a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x79446cbcdff0>]}
+[0m19:08:19.174038 [info ] [Thread-1 (]: 8 of 14 OK created sql table model olist_ziad.dim_customers .................... [[32mCREATE TABLE (99.4k rows, 8.8 MiB processed)[0m in 5.65s]
+[0m19:08:19.177122 [debug] [Thread-1 (]: Finished running node model.dbt_modeling.dim_customers
+[0m19:08:19.179279 [debug] [Thread-1 (]: Began running node model.dbt_modeling.fact_orders
+[0m19:08:19.182235 [info ] [Thread-1 (]: 9 of 14 START sql table model olist_ziad.fact_orders ........................... [RUN]
+[0m19:08:19.184721 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_modeling.dim_customers, now model.dbt_modeling.fact_orders)
+[0m19:08:19.186522 [debug] [Thread-1 (]: Began compiling node model.dbt_modeling.fact_orders
+[0m19:08:19.191108 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_modeling.fact_orders"
+[0m19:08:19.192103 [debug] [Thread-1 (]: Began executing node model.dbt_modeling.fact_orders
+[0m19:08:19.197366 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_modeling.fact_orders"
+[0m19:08:19.198364 [debug] [Thread-1 (]: On model.dbt_modeling.fact_orders: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "dbt_modeling", "target_name": "dev", "node_id": "model.dbt_modeling.fact_orders"} */
+
+  
+    
+
+    create or replace table `ready-de-25`.`olist_ziad`.`fact_orders`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      SELECT
+    oi.order_id,
+    o.customer_id,
+    oi.product_id,
+    oi.seller_id,
+    oi.shipping_limit_date,
+    oi.price,
+    oi.freight_value,
+    o.order_status,
+    o.order_purchase_timestamp,
+    p.payment_type,
+    p.payment_value
+FROM `ready-de-25`.`olist_ziad`.`stg_order_items` oi
+JOIN `ready-de-25`.`olist_ziad`.`stg_orders` o ON oi.order_id = o.order_id
+JOIN `ready-de-25`.`olist_ziad`.`stg_payments` p ON oi.order_id = p.order_id
+    );
+  
+[0m19:08:19.199082 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m19:08:20.552826 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=ready-de-25&j=bq:US:40eb80b0-631f-46ab-ae13-efaf4b447e4a&page=queryresults
+[0m19:08:27.624339 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'da97758d-fc77-41b4-960b-34fa2db9f20a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x79446cbf8310>]}
+[0m19:08:27.627921 [info ] [Thread-1 (]: 9 of 14 OK created sql table model olist_ziad.fact_orders ...................... [[32mCREATE TABLE (116.9k rows, 29.5 MiB processed)[0m in 8.44s]
+[0m19:08:27.630805 [debug] [Thread-1 (]: Finished running node model.dbt_modeling.fact_orders
+[0m19:08:27.632818 [debug] [Thread-1 (]: Began running node model.dbt_modeling.dim_products
+[0m19:08:27.635803 [info ] [Thread-1 (]: 10 of 14 START sql table model olist_ziad.dim_products ......................... [RUN]
+[0m19:08:27.639161 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_modeling.fact_orders, now model.dbt_modeling.dim_products)
+[0m19:08:27.641731 [debug] [Thread-1 (]: Began compiling node model.dbt_modeling.dim_products
+[0m19:08:27.649299 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_modeling.dim_products"
+[0m19:08:27.650669 [debug] [Thread-1 (]: Began executing node model.dbt_modeling.dim_products
+[0m19:08:27.656349 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_modeling.dim_products"
+[0m19:08:27.657371 [debug] [Thread-1 (]: On model.dbt_modeling.dim_products: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "dbt_modeling", "target_name": "dev", "node_id": "model.dbt_modeling.dim_products"} */
+
+  
+    
+
+    create or replace table `ready-de-25`.`olist_ziad`.`dim_products`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      SELECT DISTINCT
+    product_id,
+    product_category_name,
+    product_photos_qty,
+    product_weight_g,
+    product_length_cm,
+    product_height_cm,
+    product_width_cm
+FROM `ready-de-25`.`olist_ziad`.`stg_products`
+    );
+  
+[0m19:08:27.658164 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m19:08:28.944712 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=ready-de-25&j=bq:US:3a069f08-2316-4ff2-a3f0-f3b23a2b912b&page=queryresults
+[0m19:08:31.836436 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'da97758d-fc77-41b4-960b-34fa2db9f20a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x79446e82d690>]}
+[0m19:08:31.839454 [info ] [Thread-1 (]: 10 of 14 OK created sql table model olist_ziad.dim_products .................... [[32mCREATE TABLE (33.0k rows, 2.8 MiB processed)[0m in 4.20s]
+[0m19:08:31.842566 [debug] [Thread-1 (]: Finished running node model.dbt_modeling.dim_products
+[0m19:08:31.844680 [debug] [Thread-1 (]: Began running node model.dbt_modeling.vw_monthly_orders_trend
+[0m19:08:31.847755 [info ] [Thread-1 (]: 11 of 14 START sql view model olist_ziad.vw_monthly_orders_trend ............... [RUN]
+[0m19:08:31.850074 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_modeling.dim_products, now model.dbt_modeling.vw_monthly_orders_trend)
+[0m19:08:31.852319 [debug] [Thread-1 (]: Began compiling node model.dbt_modeling.vw_monthly_orders_trend
+[0m19:08:31.865194 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_modeling.vw_monthly_orders_trend"
+[0m19:08:31.867478 [debug] [Thread-1 (]: Began executing node model.dbt_modeling.vw_monthly_orders_trend
+[0m19:08:31.875548 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_modeling.vw_monthly_orders_trend"
+[0m19:08:31.877051 [debug] [Thread-1 (]: On model.dbt_modeling.vw_monthly_orders_trend: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "dbt_modeling", "target_name": "dev", "node_id": "model.dbt_modeling.vw_monthly_orders_trend"} */
+
+
+  create or replace view `ready-de-25`.`olist_ziad`.`vw_monthly_orders_trend`
+  OPTIONS()
+  as SELECT
+    DATE_TRUNC(f.order_purchase_timestamp, MONTH) AS month,
+    COUNT(f.order_id) AS total_orders
+FROM `ready-de-25`.`olist_ziad`.`fact_orders` f
+GROUP BY month
+ORDER BY month;
+
+
+[0m19:08:31.878001 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m19:08:33.450221 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=ready-de-25&j=bq:US:36efcfd1-d116-4312-b1b7-8db9f6ee4025&page=queryresults
+[0m19:08:34.128272 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'da97758d-fc77-41b4-960b-34fa2db9f20a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x79446e82d690>]}
+[0m19:08:34.129325 [info ] [Thread-1 (]: 11 of 14 OK created sql view model olist_ziad.vw_monthly_orders_trend .......... [[32mCREATE VIEW (0 processed)[0m in 2.28s]
+[0m19:08:34.130253 [debug] [Thread-1 (]: Finished running node model.dbt_modeling.vw_monthly_orders_trend
+[0m19:08:34.130920 [debug] [Thread-1 (]: Began running node model.dbt_modeling.vw_payment_methods_distribution
+[0m19:08:34.131803 [info ] [Thread-1 (]: 12 of 14 START sql view model olist_ziad.vw_payment_methods_distribution ....... [RUN]
+[0m19:08:34.132528 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_modeling.vw_monthly_orders_trend, now model.dbt_modeling.vw_payment_methods_distribution)
+[0m19:08:34.133157 [debug] [Thread-1 (]: Began compiling node model.dbt_modeling.vw_payment_methods_distribution
+[0m19:08:34.137268 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_modeling.vw_payment_methods_distribution"
+[0m19:08:34.138161 [debug] [Thread-1 (]: Began executing node model.dbt_modeling.vw_payment_methods_distribution
+[0m19:08:34.144277 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_modeling.vw_payment_methods_distribution"
+[0m19:08:34.145211 [debug] [Thread-1 (]: On model.dbt_modeling.vw_payment_methods_distribution: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "dbt_modeling", "target_name": "dev", "node_id": "model.dbt_modeling.vw_payment_methods_distribution"} */
+
+
+  create or replace view `ready-de-25`.`olist_ziad`.`vw_payment_methods_distribution`
+  OPTIONS()
+  as SELECT
+    f.payment_type,
+    COUNT(f.order_id) AS total_orders,
+    ROUND(COUNT(f.order_id) * 100.0 / SUM(COUNT(f.order_id)) OVER (), 2) AS percentage
+FROM `ready-de-25`.`olist_ziad`.`fact_orders` f
+GROUP BY f.payment_type
+ORDER BY total_orders DESC;
+
+
+[0m19:08:34.145878 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m19:08:35.395459 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=ready-de-25&j=bq:US:2fc81b3f-7d34-429b-a969-0137c06dfbac&page=queryresults
+[0m19:08:36.116439 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'da97758d-fc77-41b4-960b-34fa2db9f20a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x79446e82d690>]}
+[0m19:08:36.117432 [info ] [Thread-1 (]: 12 of 14 OK created sql view model olist_ziad.vw_payment_methods_distribution .. [[32mCREATE VIEW (0 processed)[0m in 1.98s]
+[0m19:08:36.118371 [debug] [Thread-1 (]: Finished running node model.dbt_modeling.vw_payment_methods_distribution
+[0m19:08:36.119041 [debug] [Thread-1 (]: Began running node model.dbt_modeling.vw_top_customers_by_order_value
+[0m19:08:36.119872 [info ] [Thread-1 (]: 13 of 14 START sql view model olist_ziad.vw_top_customers_by_order_value ....... [RUN]
+[0m19:08:36.120576 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_modeling.vw_payment_methods_distribution, now model.dbt_modeling.vw_top_customers_by_order_value)
+[0m19:08:36.121193 [debug] [Thread-1 (]: Began compiling node model.dbt_modeling.vw_top_customers_by_order_value
+[0m19:08:36.125586 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_modeling.vw_top_customers_by_order_value"
+[0m19:08:36.126465 [debug] [Thread-1 (]: Began executing node model.dbt_modeling.vw_top_customers_by_order_value
+[0m19:08:36.130894 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_modeling.vw_top_customers_by_order_value"
+[0m19:08:36.131834 [debug] [Thread-1 (]: On model.dbt_modeling.vw_top_customers_by_order_value: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "dbt_modeling", "target_name": "dev", "node_id": "model.dbt_modeling.vw_top_customers_by_order_value"} */
+
+
+  create or replace view `ready-de-25`.`olist_ziad`.`vw_top_customers_by_order_value`
+  OPTIONS()
+  as SELECT
+    c.customer_unique_id AS customer_id,
+    SUM(f.price + f.freight_value) AS total_order_value
+FROM `ready-de-25`.`olist_ziad`.`fact_orders` f
+JOIN `ready-de-25`.`olist_ziad`.`dim_customers` c ON f.customer_id = c.customer_id
+GROUP BY c.customer_unique_id
+ORDER BY total_order_value DESC
+LIMIT 10;
+
+
+[0m19:08:36.132506 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m19:08:37.751514 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=ready-de-25&j=bq:US:0bde64de-ede6-407f-9029-2d1c635f8dc1&page=queryresults
+[0m19:08:38.579018 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'da97758d-fc77-41b4-960b-34fa2db9f20a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x79446c73b580>]}
+[0m19:08:38.582030 [info ] [Thread-1 (]: 13 of 14 OK created sql view model olist_ziad.vw_top_customers_by_order_value .. [[32mCREATE VIEW (0 processed)[0m in 2.46s]
+[0m19:08:38.584779 [debug] [Thread-1 (]: Finished running node model.dbt_modeling.vw_top_customers_by_order_value
+[0m19:08:38.586767 [debug] [Thread-1 (]: Began running node model.dbt_modeling.vw_top_selling_products
+[0m19:08:38.589633 [info ] [Thread-1 (]: 14 of 14 START sql view model olist_ziad.vw_top_selling_products ............... [RUN]
+[0m19:08:38.593127 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_modeling.vw_top_customers_by_order_value, now model.dbt_modeling.vw_top_selling_products)
+[0m19:08:38.596267 [debug] [Thread-1 (]: Began compiling node model.dbt_modeling.vw_top_selling_products
+[0m19:08:38.611503 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_modeling.vw_top_selling_products"
+[0m19:08:38.613490 [debug] [Thread-1 (]: Began executing node model.dbt_modeling.vw_top_selling_products
+[0m19:08:38.620586 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_modeling.vw_top_selling_products"
+[0m19:08:38.622400 [debug] [Thread-1 (]: On model.dbt_modeling.vw_top_selling_products: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "dbt_modeling", "target_name": "dev", "node_id": "model.dbt_modeling.vw_top_selling_products"} */
+
+
+  create or replace view `ready-de-25`.`olist_ziad`.`vw_top_selling_products`
+  OPTIONS()
+  as SELECT
+    p.product_id,
+    p.product_category_name,
+    COUNT(f.product_id) AS quantity_sold
+FROM `ready-de-25`.`olist_ziad`.`fact_orders` f
+JOIN `ready-de-25`.`olist_ziad`.`dim_products` p ON f.product_id = p.product_id
+GROUP BY p.product_id, p.product_category_name
+ORDER BY quantity_sold DESC
+LIMIT 10;
+
+
+[0m19:08:38.624056 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m19:08:40.515630 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=ready-de-25&j=bq:US:5605771f-8080-455a-b699-7e80af0d1746&page=queryresults
+[0m19:08:41.240059 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'da97758d-fc77-41b4-960b-34fa2db9f20a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x79446e82d690>]}
+[0m19:08:41.243303 [info ] [Thread-1 (]: 14 of 14 OK created sql view model olist_ziad.vw_top_selling_products .......... [[32mCREATE VIEW (0 processed)[0m in 2.65s]
+[0m19:08:41.246372 [debug] [Thread-1 (]: Finished running node model.dbt_modeling.vw_top_selling_products
+[0m19:08:41.250837 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m19:08:41.317450 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m19:08:41.318150 [debug] [MainThread]: Connection 'model.dbt_modeling.vw_top_selling_products' was properly closed.
+[0m19:08:41.319105 [info ] [MainThread]: 
+[0m19:08:41.319954 [info ] [MainThread]: Finished running 5 table models, 9 view models in 0 hours 0 minutes and 47.35 seconds (47.35s).
+[0m19:08:41.323778 [debug] [MainThread]: Command end result
+[0m19:08:41.367824 [debug] [MainThread]: Wrote artifact WritableManifest to /home/zi/DE-Project_Ready/Development/dbt_modeling/target/manifest.json
+[0m19:08:41.369652 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/zi/DE-Project_Ready/Development/dbt_modeling/target/semantic_manifest.json
+[0m19:08:41.381994 [debug] [MainThread]: Wrote artifact RunExecutionResult to /home/zi/DE-Project_Ready/Development/dbt_modeling/target/run_results.json
+[0m19:08:41.382981 [info ] [MainThread]: 
+[0m19:08:41.383780 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m19:08:41.384420 [info ] [MainThread]: 
+[0m19:08:41.385146 [error] [MainThread]:   Database Error in model fact_reviews (models/facts/fact_reviews.sql)
+  Name review_comment_title not found inside r at [17:7]
+  compiled code at target/run/dbt_modeling/models/facts/fact_reviews.sql
+[0m19:08:41.385833 [info ] [MainThread]: 
+[0m19:08:41.386456 [info ] [MainThread]: Done. PASS=13 WARN=0 ERROR=1 SKIP=0 TOTAL=14
+[0m19:08:41.388045 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 49.25297, "process_in_blocks": "0", "process_kernel_time": 0.693907, "process_mem_max_rss": "224016", "process_out_blocks": "3528", "process_user_time": 5.329652}
+[0m19:08:41.389483 [debug] [MainThread]: Command `dbt run` failed at 19:08:41.389229 after 49.25 seconds
+[0m19:08:41.390479 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x794492fdf070>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x79446ed60850>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x794492cab4f0>]}
+[0m19:08:41.391728 [debug] [MainThread]: Flushing usage events
+[0m19:08:42.972171 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m19:17:17.152528 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7409d3be3040>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7409d2a8ee30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7409d2a8ee90>]}
+
+
+============================== 19:17:17.155492 | 5dba9bc1-dd0f-4894-83ce-4ce1c157853c ==============================
+[0m19:17:17.155492 [info ] [MainThread]: Running with dbt=1.9.1
+[0m19:17:17.156756 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/zi/.dbt', 'fail_fast': 'False', 'version_check': 'True', 'log_path': '/home/zi/DE-Project_Ready/Development/dbt_modeling/logs', 'debug': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt clean', 'log_format': 'default', 'introspect': 'True', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m19:17:17.304569 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '5dba9bc1-dd0f-4894-83ce-4ce1c157853c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7409d2a8d810>]}
+[0m19:17:17.318159 [debug] [MainThread]: Resource report: {"command_name": "clean", "command_success": true, "command_wall_clock_time": 0.22656801, "process_in_blocks": "0", "process_kernel_time": 0.10298, "process_mem_max_rss": "93476", "process_out_blocks": "16", "process_user_time": 1.468715}
+[0m19:17:17.318988 [debug] [MainThread]: Command `dbt clean` succeeded at 19:17:17.318863 after 0.23 seconds
+[0m19:17:17.319933 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7409d3be3040>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7409d2a6a800>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7409d2986980>]}
+[0m19:17:17.320716 [debug] [MainThread]: Flushing usage events
+[0m19:17:18.331593 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m19:17:51.436969 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x79e73d6e7010>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x79e73d3ac130>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x79e73c50e800>]}
+
+
+============================== 19:17:51.440660 | 9d0517ea-d543-4b3a-ae7b-9ff65421a740 ==============================
+[0m19:17:51.440660 [info ] [MainThread]: Running with dbt=1.9.1
+[0m19:17:51.441740 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'profiles_dir': '/home/zi/.dbt', 'log_path': '/home/zi/DE-Project_Ready/Development/dbt_modeling/logs', 'version_check': 'True', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'target_path': 'None', 'invocation_command': 'dbt run', 'send_anonymous_usage_stats': 'True'}
+[0m19:17:52.389310 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '9d0517ea-d543-4b3a-ae7b-9ff65421a740', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x79e71d4909d0>]}
+[0m19:17:52.456015 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '9d0517ea-d543-4b3a-ae7b-9ff65421a740', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x79e73cd38a00>]}
+[0m19:17:52.456851 [info ] [MainThread]: Registered adapter: bigquery=1.9.0
+[0m19:17:52.632414 [debug] [MainThread]: checksum: 5e8d1596cf4eae33c11286bbb248a722d21b9f00d8a7ced8137c642517055418, vars: {}, profile: , target: , version: 1.9.1
+[0m19:17:52.633378 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m19:17:52.634087 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '9d0517ea-d543-4b3a-ae7b-9ff65421a740', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x79e71d376c50>]}
+[0m19:17:53.900685 [error] [MainThread]: Encountered an error:
+Compilation Error
+  Model 'model.dbt_modeling.fact_reviews' (models/facts/fact_reviews.sql) depends on a source named 'olist_ziad.facts/order_reviews' which was not found
+[0m19:17:53.902294 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 2.5348265, "process_in_blocks": "0", "process_kernel_time": 0.645769, "process_mem_max_rss": "212552", "process_out_blocks": "16", "process_user_time": 4.053275}
+[0m19:17:53.903134 [debug] [MainThread]: Command `dbt run` failed at 19:17:53.903007 after 2.54 seconds
+[0m19:17:53.903726 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x79e73d6e7010>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x79e71c707d00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x79e71c7045b0>]}
+[0m19:17:53.904308 [debug] [MainThread]: Flushing usage events
+[0m19:17:54.886982 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m19:18:29.397825 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x745ba75c7040>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x745ba656e230>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x745ba656e1d0>]}
+
+
+============================== 19:18:29.400758 | 9c37199d-e05a-438e-aba6-0d174d8b1646 ==============================
+[0m19:18:29.400758 [info ] [MainThread]: Running with dbt=1.9.1
+[0m19:18:29.401766 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'profiles_dir': '/home/zi/.dbt', 'log_path': '/home/zi/DE-Project_Ready/Development/dbt_modeling/logs', 'fail_fast': 'False', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'introspect': 'True', 'log_format': 'default', 'target_path': 'None', 'invocation_command': 'dbt clean', 'send_anonymous_usage_stats': 'True'}
+[0m19:18:29.544608 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '9c37199d-e05a-438e-aba6-0d174d8b1646', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x745ba656f850>]}
+[0m19:18:29.554954 [debug] [MainThread]: Resource report: {"command_name": "clean", "command_success": true, "command_wall_clock_time": 0.21843123, "process_in_blocks": "0", "process_kernel_time": 0.112955, "process_mem_max_rss": "93764", "process_out_blocks": "8", "process_user_time": 1.483413}
+[0m19:18:29.555745 [debug] [MainThread]: Command `dbt clean` succeeded at 19:18:29.555555 after 0.22 seconds
+[0m19:18:29.556273 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x745ba75c7040>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x745ba656f850>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x745ba656e980>]}
+[0m19:18:29.556878 [debug] [MainThread]: Flushing usage events
+[0m19:18:30.699641 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m19:18:33.646327 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b5281cd3040>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b5280b13520>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b5280b12500>]}
+
+
+============================== 19:18:33.649382 | 92b423f7-570d-4ccd-a276-471409a89b2e ==============================
+[0m19:18:33.649382 [info ] [MainThread]: Running with dbt=1.9.1
+[0m19:18:33.650399 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'profiles_dir': '/home/zi/.dbt', 'log_path': '/home/zi/DE-Project_Ready/Development/dbt_modeling/logs', 'version_check': 'True', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'log_format': 'default', 'static_parser': 'True', 'invocation_command': 'dbt run', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m19:18:34.596084 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '92b423f7-570d-4ccd-a276-471409a89b2e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b5261a55180>]}
+[0m19:18:34.661934 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '92b423f7-570d-4ccd-a276-471409a89b2e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b5280b58e80>]}
+[0m19:18:34.662768 [info ] [MainThread]: Registered adapter: bigquery=1.9.0
+[0m19:18:34.826342 [debug] [MainThread]: checksum: 5e8d1596cf4eae33c11286bbb248a722d21b9f00d8a7ced8137c642517055418, vars: {}, profile: , target: , version: 1.9.1
+[0m19:18:34.827342 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m19:18:34.828002 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '92b423f7-570d-4ccd-a276-471409a89b2e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b5261934430>]}
+[0m19:18:36.201295 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '92b423f7-570d-4ccd-a276-471409a89b2e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b5260df0040>]}
+[0m19:18:36.299007 [debug] [MainThread]: Wrote artifact WritableManifest to /home/zi/DE-Project_Ready/Development/dbt_modeling/target/manifest.json
+[0m19:18:36.300772 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/zi/DE-Project_Ready/Development/dbt_modeling/target/semantic_manifest.json
+[0m19:18:36.314415 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '92b423f7-570d-4ccd-a276-471409a89b2e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b52820e0190>]}
+[0m19:18:36.315182 [info ] [MainThread]: Found 14 models, 8 sources, 489 macros
+[0m19:18:36.315866 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '92b423f7-570d-4ccd-a276-471409a89b2e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b5281db1720>]}
+[0m19:18:36.318179 [info ] [MainThread]: 
+[0m19:18:36.318873 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m19:18:36.319531 [info ] [MainThread]: 
+[0m19:18:36.320442 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m19:18:36.327578 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_ready-de-25'
+[0m19:18:36.328421 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m19:18:37.800544 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_ready-de-25, now list_ready-de-25_olist_ziad)
+[0m19:18:37.802714 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m19:18:38.826930 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '92b423f7-570d-4ccd-a276-471409a89b2e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b52829bee90>]}
+[0m19:18:38.827658 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m19:18:38.870711 [debug] [Thread-1 (]: Began running node model.dbt_modeling.dim_sellers
+[0m19:18:38.871481 [info ] [Thread-1 (]: 1 of 14 START sql table model olist_ziad.dim_sellers ........................... [RUN]
+[0m19:18:38.872345 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_ready-de-25_olist_ziad, now model.dbt_modeling.dim_sellers)
+[0m19:18:38.872932 [debug] [Thread-1 (]: Began compiling node model.dbt_modeling.dim_sellers
+[0m19:18:38.883961 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_modeling.dim_sellers"
+[0m19:18:38.884937 [debug] [Thread-1 (]: Began executing node model.dbt_modeling.dim_sellers
+[0m19:18:38.979786 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m19:18:40.384511 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_modeling.dim_sellers"
+[0m19:18:40.385680 [debug] [Thread-1 (]: On model.dbt_modeling.dim_sellers: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "dbt_modeling", "target_name": "dev", "node_id": "model.dbt_modeling.dim_sellers"} */
+
+  
+    
+
+    create or replace table `ready-de-25`.`olist_ziad`.`dim_sellers`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      SELECT DISTINCT
+    seller_id,
+    seller_zip_code_prefix,
+    seller_city,
+    seller_state
+FROM `ready-de-25`.`olist_ziad`.`sellers`
+    );
+  
+[0m19:18:41.171561 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=ready-de-25&j=bq:US:4e584d63-7168-44fb-a584-11cf8b22884b&page=queryresults
+[0m19:18:43.755740 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '92b423f7-570d-4ccd-a276-471409a89b2e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b5260df00d0>]}
+[0m19:18:43.756789 [info ] [Thread-1 (]: 1 of 14 OK created sql table model olist_ziad.dim_sellers ...................... [[32mCREATE TABLE (3.1k rows, 175.8 KiB processed)[0m in 4.88s]
+[0m19:18:43.757818 [debug] [Thread-1 (]: Finished running node model.dbt_modeling.dim_sellers
+[0m19:18:43.758414 [debug] [Thread-1 (]: Began running node model.dbt_modeling.fact_reviews
+[0m19:18:43.759110 [info ] [Thread-1 (]: 2 of 14 START sql table model olist_ziad.fact_reviews .......................... [RUN]
+[0m19:18:43.759855 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_modeling.dim_sellers, now model.dbt_modeling.fact_reviews)
+[0m19:18:43.760426 [debug] [Thread-1 (]: Began compiling node model.dbt_modeling.fact_reviews
+[0m19:18:43.764767 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_modeling.fact_reviews"
+[0m19:18:43.766025 [debug] [Thread-1 (]: Began executing node model.dbt_modeling.fact_reviews
+[0m19:18:43.772900 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_modeling.fact_reviews"
+[0m19:18:43.774207 [debug] [Thread-1 (]: On model.dbt_modeling.fact_reviews: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "dbt_modeling", "target_name": "dev", "node_id": "model.dbt_modeling.fact_reviews"} */
+
+  
+    
+
+    create or replace table `ready-de-25`.`olist_ziad`.`fact_reviews`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      SELECT
+    r.review_id,
+    r.order_id,
+    r.review_score
+FROM `ready-de-25`.`olist_ziad`.`order_reviews` r
+    );
+  
+[0m19:18:43.775217 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m19:18:45.266787 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=ready-de-25&j=bq:US:080dbde1-254f-4e7e-8036-ccb9e738f9b7&page=queryresults
+[0m19:18:48.349109 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '92b423f7-570d-4ccd-a276-471409a89b2e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b5281d86290>]}
+[0m19:18:48.352023 [info ] [Thread-1 (]: 2 of 14 OK created sql table model olist_ziad.fact_reviews ..................... [[32mCREATE TABLE (99.2k rows, 7.2 MiB processed)[0m in 4.59s]
+[0m19:18:48.354977 [debug] [Thread-1 (]: Finished running node model.dbt_modeling.fact_reviews
+[0m19:18:48.357011 [debug] [Thread-1 (]: Began running node model.dbt_modeling.stg_customers
+[0m19:18:48.359747 [info ] [Thread-1 (]: 3 of 14 START sql view model olist_ziad.stg_customers .......................... [RUN]
+[0m19:18:48.362261 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_modeling.fact_reviews, now model.dbt_modeling.stg_customers)
+[0m19:18:48.364407 [debug] [Thread-1 (]: Began compiling node model.dbt_modeling.stg_customers
+[0m19:18:48.368360 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_modeling.stg_customers"
+[0m19:18:48.369219 [debug] [Thread-1 (]: Began executing node model.dbt_modeling.stg_customers
+[0m19:18:48.396191 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_modeling.stg_customers"
+[0m19:18:48.397819 [debug] [Thread-1 (]: On model.dbt_modeling.stg_customers: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "dbt_modeling", "target_name": "dev", "node_id": "model.dbt_modeling.stg_customers"} */
+
+
+  create or replace view `ready-de-25`.`olist_ziad`.`stg_customers`
+  OPTIONS()
+  as WITH cleaned_customers AS (
+    SELECT DISTINCT
+        customer_id,
+        customer_unique_id,
+        customer_zip_code_prefix,
+        customer_city,
+        customer_state
+    FROM `ready-de-25`.`olist_ziad`.`customers`
+)
+
+SELECT * FROM cleaned_customers;
+
+
+[0m19:18:48.399151 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m19:18:51.002718 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=ready-de-25&j=bq:US:c05f7b3c-664e-4a9f-8e47-53ea2ff1a32c&page=queryresults
+[0m19:18:51.826058 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '92b423f7-570d-4ccd-a276-471409a89b2e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b5260df1de0>]}
+[0m19:18:51.827059 [info ] [Thread-1 (]: 3 of 14 OK created sql view model olist_ziad.stg_customers ..................... [[32mCREATE VIEW (0 processed)[0m in 3.46s]
+[0m19:18:51.828039 [debug] [Thread-1 (]: Finished running node model.dbt_modeling.stg_customers
+[0m19:18:51.828708 [debug] [Thread-1 (]: Began running node model.dbt_modeling.stg_order_items
+[0m19:18:51.829574 [info ] [Thread-1 (]: 4 of 14 START sql view model olist_ziad.stg_order_items ........................ [RUN]
+[0m19:18:51.830417 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_modeling.stg_customers, now model.dbt_modeling.stg_order_items)
+[0m19:18:51.831109 [debug] [Thread-1 (]: Began compiling node model.dbt_modeling.stg_order_items
+[0m19:18:51.835370 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_modeling.stg_order_items"
+[0m19:18:51.836397 [debug] [Thread-1 (]: Began executing node model.dbt_modeling.stg_order_items
+[0m19:18:51.841379 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_modeling.stg_order_items"
+[0m19:18:51.842429 [debug] [Thread-1 (]: On model.dbt_modeling.stg_order_items: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "dbt_modeling", "target_name": "dev", "node_id": "model.dbt_modeling.stg_order_items"} */
+
+
+  create or replace view `ready-de-25`.`olist_ziad`.`stg_order_items`
+  OPTIONS()
+  as WITH cleaned_order_items AS (
+    SELECT DISTINCT
+        order_id,
+        order_item_id,
+        product_id,
+        seller_id,
+        shipping_limit_date,
+        price,
+        freight_value
+    FROM `ready-de-25`.`olist_ziad`.`order_items`
+)
+
+SELECT * FROM cleaned_order_items;
+
+
+[0m19:18:51.843250 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m19:18:54.484211 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=ready-de-25&j=bq:US:59a41176-aa20-4478-b526-c3f395e6394d&page=queryresults
+[0m19:18:55.205110 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '92b423f7-570d-4ccd-a276-471409a89b2e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b52616050c0>]}
+[0m19:18:55.206160 [info ] [Thread-1 (]: 4 of 14 OK created sql view model olist_ziad.stg_order_items ................... [[32mCREATE VIEW (0 processed)[0m in 3.37s]
+[0m19:18:55.207141 [debug] [Thread-1 (]: Finished running node model.dbt_modeling.stg_order_items
+[0m19:18:55.207843 [debug] [Thread-1 (]: Began running node model.dbt_modeling.stg_orders
+[0m19:18:55.208842 [info ] [Thread-1 (]: 5 of 14 START sql view model olist_ziad.stg_orders ............................. [RUN]
+[0m19:18:55.209645 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_modeling.stg_order_items, now model.dbt_modeling.stg_orders)
+[0m19:18:55.210294 [debug] [Thread-1 (]: Began compiling node model.dbt_modeling.stg_orders
+[0m19:18:55.214151 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_modeling.stg_orders"
+[0m19:18:55.214995 [debug] [Thread-1 (]: Began executing node model.dbt_modeling.stg_orders
+[0m19:18:55.221184 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_modeling.stg_orders"
+[0m19:18:55.222096 [debug] [Thread-1 (]: On model.dbt_modeling.stg_orders: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "dbt_modeling", "target_name": "dev", "node_id": "model.dbt_modeling.stg_orders"} */
+
+
+  create or replace view `ready-de-25`.`olist_ziad`.`stg_orders`
+  OPTIONS()
+  as WITH cleaned_orders AS (
+    SELECT DISTINCT
+        order_id,
+        customer_id,
+        order_status,
+        order_purchase_timestamp,
+        order_delivered_customer_date,
+        order_estimated_delivery_date
+    FROM `ready-de-25`.`olist_ziad`.`orders`
+)
+
+SELECT * FROM cleaned_orders;
+
+
+[0m19:18:55.222766 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m19:18:56.428679 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=ready-de-25&j=bq:US:5c1f64db-e1e6-4ba7-ad3b-64bcbc4c7ca6&page=queryresults
+[0m19:18:57.250355 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '92b423f7-570d-4ccd-a276-471409a89b2e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b5261604e80>]}
+[0m19:18:57.251778 [info ] [Thread-1 (]: 5 of 14 OK created sql view model olist_ziad.stg_orders ........................ [[32mCREATE VIEW (0 processed)[0m in 2.04s]
+[0m19:18:57.253268 [debug] [Thread-1 (]: Finished running node model.dbt_modeling.stg_orders
+[0m19:18:57.254326 [debug] [Thread-1 (]: Began running node model.dbt_modeling.stg_payments
+[0m19:18:57.255553 [info ] [Thread-1 (]: 6 of 14 START sql view model olist_ziad.stg_payments ........................... [RUN]
+[0m19:18:57.256714 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_modeling.stg_orders, now model.dbt_modeling.stg_payments)
+[0m19:18:57.257701 [debug] [Thread-1 (]: Began compiling node model.dbt_modeling.stg_payments
+[0m19:18:57.263519 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_modeling.stg_payments"
+[0m19:18:57.264714 [debug] [Thread-1 (]: Began executing node model.dbt_modeling.stg_payments
+[0m19:18:57.270908 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_modeling.stg_payments"
+[0m19:18:57.272528 [debug] [Thread-1 (]: On model.dbt_modeling.stg_payments: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "dbt_modeling", "target_name": "dev", "node_id": "model.dbt_modeling.stg_payments"} */
+
+
+  create or replace view `ready-de-25`.`olist_ziad`.`stg_payments`
+  OPTIONS()
+  as SELECT DISTINCT
+    order_id,
+    payment_type,
+    payment_value
+FROM `ready-de-25`.`olist_ziad`.`order_payments`;
+
+
+[0m19:18:57.274166 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m19:18:58.680317 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=ready-de-25&j=bq:US:b7076c64-b151-4c11-8231-41af26aef5a1&page=queryresults
+[0m19:18:59.435231 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '92b423f7-570d-4ccd-a276-471409a89b2e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b5261604e80>]}
+[0m19:18:59.438266 [info ] [Thread-1 (]: 6 of 14 OK created sql view model olist_ziad.stg_payments ...................... [[32mCREATE VIEW (0 processed)[0m in 2.18s]
+[0m19:18:59.441302 [debug] [Thread-1 (]: Finished running node model.dbt_modeling.stg_payments
+[0m19:18:59.443352 [debug] [Thread-1 (]: Began running node model.dbt_modeling.stg_products
+[0m19:18:59.446539 [info ] [Thread-1 (]: 7 of 14 START sql view model olist_ziad.stg_products ........................... [RUN]
+[0m19:18:59.448910 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_modeling.stg_payments, now model.dbt_modeling.stg_products)
+[0m19:18:59.451376 [debug] [Thread-1 (]: Began compiling node model.dbt_modeling.stg_products
+[0m19:18:59.469106 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_modeling.stg_products"
+[0m19:18:59.471499 [debug] [Thread-1 (]: Began executing node model.dbt_modeling.stg_products
+[0m19:18:59.481491 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_modeling.stg_products"
+[0m19:18:59.482932 [debug] [Thread-1 (]: On model.dbt_modeling.stg_products: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "dbt_modeling", "target_name": "dev", "node_id": "model.dbt_modeling.stg_products"} */
+
+
+  create or replace view `ready-de-25`.`olist_ziad`.`stg_products`
+  OPTIONS()
+  as WITH cleaned_products AS (
+    SELECT DISTINCT
+        product_id,
+        product_category_name,
+        product_name_lenght,
+        product_description_lenght,
+        product_photos_qty,
+        product_weight_g,
+        product_length_cm,
+        product_height_cm,
+        product_width_cm
+    FROM `ready-de-25`.`olist_ziad`.`products`
+)
+
+SELECT * FROM cleaned_products;
+
+
+[0m19:18:59.484133 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m19:19:01.038229 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=ready-de-25&j=bq:US:0dcc3bd8-ac67-44d3-bd81-636372a02995&page=queryresults
+[0m19:19:01.966786 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '92b423f7-570d-4ccd-a276-471409a89b2e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b52615e7c70>]}
+[0m19:19:01.969786 [info ] [Thread-1 (]: 7 of 14 OK created sql view model olist_ziad.stg_products ...................... [[32mCREATE VIEW (0 processed)[0m in 2.52s]
+[0m19:19:01.972805 [debug] [Thread-1 (]: Finished running node model.dbt_modeling.stg_products
+[0m19:19:01.975233 [debug] [Thread-1 (]: Began running node model.dbt_modeling.dim_customers
+[0m19:19:01.978468 [info ] [Thread-1 (]: 8 of 14 START sql table model olist_ziad.dim_customers ......................... [RUN]
+[0m19:19:01.980963 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_modeling.stg_products, now model.dbt_modeling.dim_customers)
+[0m19:19:01.983045 [debug] [Thread-1 (]: Began compiling node model.dbt_modeling.dim_customers
+[0m19:19:02.000086 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_modeling.dim_customers"
+[0m19:19:02.002878 [debug] [Thread-1 (]: Began executing node model.dbt_modeling.dim_customers
+[0m19:19:02.009434 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m19:19:03.086633 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_modeling.dim_customers"
+[0m19:19:03.089403 [debug] [Thread-1 (]: On model.dbt_modeling.dim_customers: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "dbt_modeling", "target_name": "dev", "node_id": "model.dbt_modeling.dim_customers"} */
+
+  
+    
+
+    create or replace table `ready-de-25`.`olist_ziad`.`dim_customers`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      SELECT DISTINCT
+    customer_id,
+    customer_unique_id,
+    customer_zip_code_prefix,
+    customer_city,
+    customer_state
+FROM `ready-de-25`.`olist_ziad`.`stg_customers`
+    );
+  
+[0m19:19:03.799390 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=ready-de-25&j=bq:US:09a610c0-4cb3-47fc-8316-c68788674a87&page=queryresults
+[0m19:19:07.983574 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '92b423f7-570d-4ccd-a276-471409a89b2e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b5260df0a00>]}
+[0m19:19:07.987099 [info ] [Thread-1 (]: 8 of 14 OK created sql table model olist_ziad.dim_customers .................... [[32mCREATE TABLE (99.4k rows, 8.8 MiB processed)[0m in 6.00s]
+[0m19:19:07.990452 [debug] [Thread-1 (]: Finished running node model.dbt_modeling.dim_customers
+[0m19:19:07.992691 [debug] [Thread-1 (]: Began running node model.dbt_modeling.fact_orders
+[0m19:19:07.995575 [info ] [Thread-1 (]: 9 of 14 START sql table model olist_ziad.fact_orders ........................... [RUN]
+[0m19:19:07.998247 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_modeling.dim_customers, now model.dbt_modeling.fact_orders)
+[0m19:19:08.000694 [debug] [Thread-1 (]: Began compiling node model.dbt_modeling.fact_orders
+[0m19:19:08.013184 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_modeling.fact_orders"
+[0m19:19:08.014899 [debug] [Thread-1 (]: Began executing node model.dbt_modeling.fact_orders
+[0m19:19:08.020080 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m19:19:09.125543 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_modeling.fact_orders"
+[0m19:19:09.126840 [debug] [Thread-1 (]: On model.dbt_modeling.fact_orders: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "dbt_modeling", "target_name": "dev", "node_id": "model.dbt_modeling.fact_orders"} */
+
+  
+    
+
+    create or replace table `ready-de-25`.`olist_ziad`.`fact_orders`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      SELECT
+    oi.order_id,
+    o.customer_id,
+    oi.product_id,
+    oi.seller_id,
+    oi.shipping_limit_date,
+    oi.price,
+    oi.freight_value,
+    o.order_status,
+    o.order_purchase_timestamp,
+    p.payment_type,
+    p.payment_value
+FROM `ready-de-25`.`olist_ziad`.`stg_order_items` oi
+JOIN `ready-de-25`.`olist_ziad`.`stg_orders` o ON oi.order_id = o.order_id
+JOIN `ready-de-25`.`olist_ziad`.`stg_payments` p ON oi.order_id = p.order_id
+    );
+  
+[0m19:19:10.250237 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=ready-de-25&j=bq:US:2d6742a7-0f6c-471e-81e6-4479cd499ca0&page=queryresults
+[0m19:19:15.583897 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '92b423f7-570d-4ccd-a276-471409a89b2e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b5281d86290>]}
+[0m19:19:15.584947 [info ] [Thread-1 (]: 9 of 14 OK created sql table model olist_ziad.fact_orders ...................... [[32mCREATE TABLE (116.9k rows, 29.5 MiB processed)[0m in 7.59s]
+[0m19:19:15.585953 [debug] [Thread-1 (]: Finished running node model.dbt_modeling.fact_orders
+[0m19:19:15.586662 [debug] [Thread-1 (]: Began running node model.dbt_modeling.dim_products
+[0m19:19:15.587522 [info ] [Thread-1 (]: 10 of 14 START sql table model olist_ziad.dim_products ......................... [RUN]
+[0m19:19:15.588470 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_modeling.fact_orders, now model.dbt_modeling.dim_products)
+[0m19:19:15.589164 [debug] [Thread-1 (]: Began compiling node model.dbt_modeling.dim_products
+[0m19:19:15.593342 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_modeling.dim_products"
+[0m19:19:15.594295 [debug] [Thread-1 (]: Began executing node model.dbt_modeling.dim_products
+[0m19:19:15.597907 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m19:19:16.715203 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_modeling.dim_products"
+[0m19:19:16.718214 [debug] [Thread-1 (]: On model.dbt_modeling.dim_products: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "dbt_modeling", "target_name": "dev", "node_id": "model.dbt_modeling.dim_products"} */
+
+  
+    
+
+    create or replace table `ready-de-25`.`olist_ziad`.`dim_products`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      SELECT DISTINCT
+    product_id,
+    product_category_name,
+    product_photos_qty,
+    product_weight_g,
+    product_length_cm,
+    product_height_cm,
+    product_width_cm
+FROM `ready-de-25`.`olist_ziad`.`stg_products`
+    );
+  
+[0m19:19:17.524984 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=ready-de-25&j=bq:US:e0bb4b66-e3a9-4e34-b444-43dabaa42332&page=queryresults
+[0m19:19:20.902953 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '92b423f7-570d-4ccd-a276-471409a89b2e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b5261170550>]}
+[0m19:19:20.904166 [info ] [Thread-1 (]: 10 of 14 OK created sql table model olist_ziad.dim_products .................... [[32mCREATE TABLE (33.0k rows, 2.8 MiB processed)[0m in 5.31s]
+[0m19:19:20.905136 [debug] [Thread-1 (]: Finished running node model.dbt_modeling.dim_products
+[0m19:19:20.905798 [debug] [Thread-1 (]: Began running node model.dbt_modeling.vw_monthly_orders_trend
+[0m19:19:20.906693 [info ] [Thread-1 (]: 11 of 14 START sql view model olist_ziad.vw_monthly_orders_trend ............... [RUN]
+[0m19:19:20.907573 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_modeling.dim_products, now model.dbt_modeling.vw_monthly_orders_trend)
+[0m19:19:20.908288 [debug] [Thread-1 (]: Began compiling node model.dbt_modeling.vw_monthly_orders_trend
+[0m19:19:20.914820 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_modeling.vw_monthly_orders_trend"
+[0m19:19:20.915981 [debug] [Thread-1 (]: Began executing node model.dbt_modeling.vw_monthly_orders_trend
+[0m19:19:20.922206 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_modeling.vw_monthly_orders_trend"
+[0m19:19:20.923587 [debug] [Thread-1 (]: On model.dbt_modeling.vw_monthly_orders_trend: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "dbt_modeling", "target_name": "dev", "node_id": "model.dbt_modeling.vw_monthly_orders_trend"} */
+
+
+  create or replace view `ready-de-25`.`olist_ziad`.`vw_monthly_orders_trend`
+  OPTIONS()
+  as SELECT
+    DATE_TRUNC(f.order_purchase_timestamp, MONTH) AS month,
+    COUNT(f.order_id) AS total_orders
+FROM `ready-de-25`.`olist_ziad`.`fact_orders` f
+GROUP BY month
+ORDER BY month;
+
+
+[0m19:19:20.924585 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m19:19:22.272294 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=ready-de-25&j=bq:US:00a6e9c1-f79f-4733-b169-1e589a67ff38&page=queryresults
+[0m19:19:22.958032 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '92b423f7-570d-4ccd-a276-471409a89b2e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b5281d86290>]}
+[0m19:19:22.958970 [info ] [Thread-1 (]: 11 of 14 OK created sql view model olist_ziad.vw_monthly_orders_trend .......... [[32mCREATE VIEW (0 processed)[0m in 2.05s]
+[0m19:19:22.959855 [debug] [Thread-1 (]: Finished running node model.dbt_modeling.vw_monthly_orders_trend
+[0m19:19:22.960484 [debug] [Thread-1 (]: Began running node model.dbt_modeling.vw_payment_methods_distribution
+[0m19:19:22.961421 [info ] [Thread-1 (]: 12 of 14 START sql view model olist_ziad.vw_payment_methods_distribution ....... [RUN]
+[0m19:19:22.962111 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_modeling.vw_monthly_orders_trend, now model.dbt_modeling.vw_payment_methods_distribution)
+[0m19:19:22.962704 [debug] [Thread-1 (]: Began compiling node model.dbt_modeling.vw_payment_methods_distribution
+[0m19:19:22.966380 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_modeling.vw_payment_methods_distribution"
+[0m19:19:22.967312 [debug] [Thread-1 (]: Began executing node model.dbt_modeling.vw_payment_methods_distribution
+[0m19:19:22.971444 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_modeling.vw_payment_methods_distribution"
+[0m19:19:22.972293 [debug] [Thread-1 (]: On model.dbt_modeling.vw_payment_methods_distribution: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "dbt_modeling", "target_name": "dev", "node_id": "model.dbt_modeling.vw_payment_methods_distribution"} */
+
+
+  create or replace view `ready-de-25`.`olist_ziad`.`vw_payment_methods_distribution`
+  OPTIONS()
+  as SELECT
+    f.payment_type,
+    COUNT(f.order_id) AS total_orders,
+    ROUND(COUNT(f.order_id) * 100.0 / SUM(COUNT(f.order_id)) OVER (), 2) AS percentage
+FROM `ready-de-25`.`olist_ziad`.`fact_orders` f
+GROUP BY f.payment_type
+ORDER BY total_orders DESC;
+
+
+[0m19:19:22.972952 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m19:19:24.184898 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=ready-de-25&j=bq:US:73501771-bc06-478e-8845-c0fb0803c8e6&page=queryresults
+[0m19:19:24.897562 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '92b423f7-570d-4ccd-a276-471409a89b2e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b5261492e30>]}
+[0m19:19:24.898590 [info ] [Thread-1 (]: 12 of 14 OK created sql view model olist_ziad.vw_payment_methods_distribution .. [[32mCREATE VIEW (0 processed)[0m in 1.94s]
+[0m19:19:24.899506 [debug] [Thread-1 (]: Finished running node model.dbt_modeling.vw_payment_methods_distribution
+[0m19:19:24.900168 [debug] [Thread-1 (]: Began running node model.dbt_modeling.vw_top_customers_by_order_value
+[0m19:19:24.901017 [info ] [Thread-1 (]: 13 of 14 START sql view model olist_ziad.vw_top_customers_by_order_value ....... [RUN]
+[0m19:19:24.901756 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_modeling.vw_payment_methods_distribution, now model.dbt_modeling.vw_top_customers_by_order_value)
+[0m19:19:24.902358 [debug] [Thread-1 (]: Began compiling node model.dbt_modeling.vw_top_customers_by_order_value
+[0m19:19:24.906542 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_modeling.vw_top_customers_by_order_value"
+[0m19:19:24.907379 [debug] [Thread-1 (]: Began executing node model.dbt_modeling.vw_top_customers_by_order_value
+[0m19:19:24.911536 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_modeling.vw_top_customers_by_order_value"
+[0m19:19:24.912395 [debug] [Thread-1 (]: On model.dbt_modeling.vw_top_customers_by_order_value: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "dbt_modeling", "target_name": "dev", "node_id": "model.dbt_modeling.vw_top_customers_by_order_value"} */
+
+
+  create or replace view `ready-de-25`.`olist_ziad`.`vw_top_customers_by_order_value`
+  OPTIONS()
+  as SELECT
+    c.customer_unique_id AS customer_id,
+    SUM(f.price + f.freight_value) AS total_order_value
+FROM `ready-de-25`.`olist_ziad`.`fact_orders` f
+JOIN `ready-de-25`.`olist_ziad`.`dim_customers` c ON f.customer_id = c.customer_id
+GROUP BY c.customer_unique_id
+ORDER BY total_order_value DESC
+LIMIT 10;
+
+
+[0m19:19:24.913023 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m19:19:26.226348 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=ready-de-25&j=bq:US:bad5b1b5-a28a-4669-95eb-62333112972b&page=queryresults
+[0m19:19:26.989246 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '92b423f7-570d-4ccd-a276-471409a89b2e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b5281d86290>]}
+[0m19:19:26.990224 [info ] [Thread-1 (]: 13 of 14 OK created sql view model olist_ziad.vw_top_customers_by_order_value .. [[32mCREATE VIEW (0 processed)[0m in 2.09s]
+[0m19:19:26.991145 [debug] [Thread-1 (]: Finished running node model.dbt_modeling.vw_top_customers_by_order_value
+[0m19:19:26.991768 [debug] [Thread-1 (]: Began running node model.dbt_modeling.vw_top_selling_products
+[0m19:19:26.992591 [info ] [Thread-1 (]: 14 of 14 START sql view model olist_ziad.vw_top_selling_products ............... [RUN]
+[0m19:19:26.993278 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_modeling.vw_top_customers_by_order_value, now model.dbt_modeling.vw_top_selling_products)
+[0m19:19:26.993872 [debug] [Thread-1 (]: Began compiling node model.dbt_modeling.vw_top_selling_products
+[0m19:19:26.999709 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_modeling.vw_top_selling_products"
+[0m19:19:27.000582 [debug] [Thread-1 (]: Began executing node model.dbt_modeling.vw_top_selling_products
+[0m19:19:27.004578 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_modeling.vw_top_selling_products"
+[0m19:19:27.005445 [debug] [Thread-1 (]: On model.dbt_modeling.vw_top_selling_products: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "dbt_modeling", "target_name": "dev", "node_id": "model.dbt_modeling.vw_top_selling_products"} */
+
+
+  create or replace view `ready-de-25`.`olist_ziad`.`vw_top_selling_products`
+  OPTIONS()
+  as SELECT
+    p.product_id,
+    p.product_category_name,
+    COUNT(f.product_id) AS quantity_sold
+FROM `ready-de-25`.`olist_ziad`.`fact_orders` f
+JOIN `ready-de-25`.`olist_ziad`.`dim_products` p ON f.product_id = p.product_id
+GROUP BY p.product_id, p.product_category_name
+ORDER BY quantity_sold DESC
+LIMIT 10;
+
+
+[0m19:19:27.006162 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m19:19:28.176443 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=ready-de-25&j=bq:US:687703d7-da95-44ba-86c6-88428d05d4c7&page=queryresults
+[0m19:19:29.094208 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '92b423f7-570d-4ccd-a276-471409a89b2e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b5281d86290>]}
+[0m19:19:29.095356 [info ] [Thread-1 (]: 14 of 14 OK created sql view model olist_ziad.vw_top_selling_products .......... [[32mCREATE VIEW (0 processed)[0m in 2.10s]
+[0m19:19:29.096428 [debug] [Thread-1 (]: Finished running node model.dbt_modeling.vw_top_selling_products
+[0m19:19:29.098147 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m19:19:29.148533 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m19:19:29.149251 [debug] [MainThread]: Connection 'model.dbt_modeling.vw_top_selling_products' was properly closed.
+[0m19:19:29.149951 [info ] [MainThread]: 
+[0m19:19:29.150532 [info ] [MainThread]: Finished running 5 table models, 9 view models in 0 hours 0 minutes and 52.83 seconds (52.83s).
+[0m19:19:29.154427 [debug] [MainThread]: Command end result
+[0m19:19:29.193334 [debug] [MainThread]: Wrote artifact WritableManifest to /home/zi/DE-Project_Ready/Development/dbt_modeling/target/manifest.json
+[0m19:19:29.195481 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/zi/DE-Project_Ready/Development/dbt_modeling/target/semantic_manifest.json
+[0m19:19:29.203332 [debug] [MainThread]: Wrote artifact RunExecutionResult to /home/zi/DE-Project_Ready/Development/dbt_modeling/target/run_results.json
+[0m19:19:29.203847 [info ] [MainThread]: 
+[0m19:19:29.204486 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m19:19:29.205085 [info ] [MainThread]: 
+[0m19:19:29.205672 [info ] [MainThread]: Done. PASS=14 WARN=0 ERROR=0 SKIP=0 TOTAL=14
+[0m19:19:29.206912 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 55.62199, "process_in_blocks": "0", "process_kernel_time": 0.721111, "process_mem_max_rss": "222812", "process_out_blocks": "3568", "process_user_time": 6.305715}
+[0m19:19:29.207724 [debug] [MainThread]: Command `dbt run` succeeded at 19:19:29.207551 after 55.62 seconds
+[0m19:19:29.208294 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b5281cd3040>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b528199f580>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b5261a55180>]}
+[0m19:19:29.209114 [debug] [MainThread]: Flushing usage events
+[0m19:19:30.350184 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m19:20:05.314079 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72ddb8ab2fe0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72ddb790ece0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72ddb790fa00>]}
+
+
+============================== 19:20:05.317074 | 4c2eb11f-dc3b-4f4d-9803-f22a34fec8e2 ==============================
+[0m19:20:05.317074 [info ] [MainThread]: Running with dbt=1.9.1
+[0m19:20:05.318160 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/zi/.dbt', 'version_check': 'True', 'fail_fast': 'False', 'log_path': '/home/zi/DE-Project_Ready/Development/dbt_modeling/logs', 'debug': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'static_parser': 'True', 'invocation_command': 'dbt test', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m19:20:06.266550 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '4c2eb11f-dc3b-4f4d-9803-f22a34fec8e2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72dd9881d780>]}
+[0m19:20:06.332221 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '4c2eb11f-dc3b-4f4d-9803-f22a34fec8e2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72dd98798d90>]}
+[0m19:20:06.333086 [info ] [MainThread]: Registered adapter: bigquery=1.9.0
+[0m19:20:06.496432 [debug] [MainThread]: checksum: 5e8d1596cf4eae33c11286bbb248a722d21b9f00d8a7ced8137c642517055418, vars: {}, profile: , target: , version: 1.9.1
+[0m19:20:06.631721 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m19:20:06.632225 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m19:20:06.675824 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '4c2eb11f-dc3b-4f4d-9803-f22a34fec8e2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72dd982c4130>]}
+[0m19:20:06.777067 [debug] [MainThread]: Wrote artifact WritableManifest to /home/zi/DE-Project_Ready/Development/dbt_modeling/target/manifest.json
+[0m19:20:06.778787 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/zi/DE-Project_Ready/Development/dbt_modeling/target/semantic_manifest.json
+[0m19:20:06.802293 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '4c2eb11f-dc3b-4f4d-9803-f22a34fec8e2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72dd982c5db0>]}
+[0m19:20:06.803378 [info ] [MainThread]: Found 14 models, 8 sources, 489 macros
+[0m19:20:06.804355 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '4c2eb11f-dc3b-4f4d-9803-f22a34fec8e2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72dd98b83100>]}
+[0m19:20:06.806803 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m19:20:06.810173 [debug] [MainThread]: Command end result
+[0m19:20:06.851508 [debug] [MainThread]: Wrote artifact WritableManifest to /home/zi/DE-Project_Ready/Development/dbt_modeling/target/manifest.json
+[0m19:20:06.853421 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/zi/DE-Project_Ready/Development/dbt_modeling/target/semantic_manifest.json
+[0m19:20:06.857300 [debug] [MainThread]: Wrote artifact RunExecutionResult to /home/zi/DE-Project_Ready/Development/dbt_modeling/target/run_results.json
+[0m19:20:06.858416 [debug] [MainThread]: Resource report: {"command_name": "test", "command_success": true, "command_wall_clock_time": 1.6065458, "process_in_blocks": "0", "process_kernel_time": 0.633871, "process_mem_max_rss": "211280", "process_out_blocks": "2136", "process_user_time": 3.056202}
+[0m19:20:06.859201 [debug] [MainThread]: Command `dbt test` succeeded at 19:20:06.859085 after 1.61 seconds
+[0m19:20:06.859762 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72ddb8ab2fe0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72dd9881d780>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72ddb8748550>]}
+[0m19:20:06.860439 [debug] [MainThread]: Flushing usage events
+[0m19:20:07.899844 [debug] [MainThread]: An error was encountered while trying to flush usage events
