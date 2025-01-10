@@ -1,3 +1,5 @@
+-- 10- What is the distribution of payment methods used by customers?
+
 SELECT
     f.payment_type,
     COUNT(f.order_id) AS total_orders,

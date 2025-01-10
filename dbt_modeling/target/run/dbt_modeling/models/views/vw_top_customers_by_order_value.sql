@@ -2,7 +2,9 @@
 
   create or replace view `ready-de-25`.`olist_ziad`.`vw_top_customers_by_order_value`
   OPTIONS()
-  as SELECT
+  as -- 1- Who are the top customers by total order value?
+
+SELECT
     c.customer_unique_id AS customer_id,
     SUM(f.price + f.freight_value) AS total_order_value
 FROM `ready-de-25`.`olist_ziad`.`fact_orders` f

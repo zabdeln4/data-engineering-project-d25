@@ -1,8 +1,8 @@
--- 7- What is the total number of orders placed each month (trend over time)?
+-- 12- What is the monthly revenue trend for the business?
 
 SELECT
     DATE_TRUNC(f.order_purchase_timestamp, MONTH) AS month,
-    COUNT(f.order_id) AS total_orders
+    SUM(f.price + f.freight_value) AS total_revenue
 FROM {{ ref('fact_orders') }} f
 GROUP BY month
 ORDER BY month
