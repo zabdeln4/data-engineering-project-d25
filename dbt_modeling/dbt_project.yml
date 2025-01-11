@@ -1,0 +1,32 @@
+
+# Project name and version
+name: 'dbt_modeling'
+version: '1.0.0'
+
+# Profile name
+profile: 'dbt_modeling'
+
+# Paths to your model files
+model-paths: ["models"]
+analysis-paths: ["analyses"]
+test-paths: ["tests"]
+seed-paths: ["seeds"]
+macro-paths: ["macros"]
+snapshot-paths: ["snapshots"]
+
+# Clean targets
+clean-targets:
+  - "target"
+  - "dbt_packages"
+
+# Configuring models
+models:
+  dbt_modeling:
+    staging:
+      +materialized: view
+    facts:
+      +materialized: table
+    dimensions:
+      +materialized: table
+    views:
+      +materialized: view
