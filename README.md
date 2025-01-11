@@ -45,8 +45,12 @@ The architecture of the Olist data engineering project is as follows:
 4️⃣ **Pipeline Orchestration**
 - Apache Airflow manages the entire data pipeline, scheduling data ingestion, transformations, and updates to the dashboard.
 
-5️⃣ **Visualization**
+5️⃣ **Continuous Integration/Deployment**
+- Google Cloud Build automates the deployment of dbt models and Airflow DAGs to ensure seamless updates.
+
+6️⃣ **Visualization**
 - Looker Studio connects to BigQuery views to provide interactive dashboards with key business insights.
+
 
 ### 🧩 **Architecture Diagram**
 ![Architecture Diagram](./IMGs/Olist_Architecture.png)
