@@ -49,7 +49,7 @@ The architecture of the Olist data engineering project is as follows:
 - Looker Studio connects to BigQuery views to provide interactive dashboards with key business insights.
 
 ### 🧩 **Architecture Diagram**
-![Architecture Diagram](./architecture_diagram.png)
+![Architecture Diagram](./IMGs/Olist_Architecture.png)
 
 ---
 
